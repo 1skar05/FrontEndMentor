@@ -1,0 +1,43 @@
+:root {
+  --white: #fff;
+  --light-gray: #d6e2f0;
+  --grayfish-blue: #7b879d;
+  --dark-blue: #1f3251;
+}
+* {
+  font-family: "Outfit", sans-serif;
+}
+body {
+  background-color: var(--light-gray);
+}
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: var(--white);
+  text-align: center;
+  border-radius: 20px;
+  padding: 15px 5px;
+}
+.card .card-img {
+  padding-top: 5px;
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+}
+.card .title {
+  font-weight: 700;
+  font-size: 22px;
+  margin: 20px 20px;
+  color: var(--dark-blue);
+}
+.card .desc {
+  margin: 0 20px;
+  font-weight: 400;
+  color: var(--grayfish-blue);
+  font-size: 15px;
+  padding-bottom: 20px;
+}
