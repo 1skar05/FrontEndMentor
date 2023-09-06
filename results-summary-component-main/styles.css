@@ -1,0 +1,53 @@
+:root {
+  /* Primary */
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-tea: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradient */
+  --light-slate-blue: hsl(252, 100%, 67%);
+  --light-royal-blue: hsl(241, 81%, 54%);
+  --violet-blue: hsla(241, 72%, 46%, 0);
+
+  /* Neutral */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+*,
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+/* Mobile */
+@media screen and (max-width: 375px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  h1 {
+    margin: 10px 0;
+  }
+  .card .result {
+    color: var(--white);
+    background-color: var(--light-royal-blue);
+
+    border-radius: 0 0 30px 30px;
+    padding: 10px;
+  }
+  .card .result .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--cobalt-blue);
+    margin: 0 auto;
+  }
+}
