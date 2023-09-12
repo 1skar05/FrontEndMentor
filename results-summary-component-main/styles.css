@@ -157,7 +157,7 @@ p {
   color: var(--white);
   border-radius: 25px;
   font-size: 18px;
-  padding: 10px;
+  padding: 12px;
 }
 
 @media screen and (min-width: 768px) {
@@ -195,7 +195,7 @@ p {
     height: 200px;
   }
   .card .result .circle h1 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   .card .result .circle p {
     font-size: 18px;
