@@ -174,17 +174,10 @@ p {
   }
 
   .card .result {
-    color: var(--white);
-    background: linear-gradient(
-      to bottom,
-      var(--light-slate-blue),
-      var(--light-royal-blue)
-    );
-
     border-radius: 35px;
     padding: 40px 0;
     padding-inline: 55px;
-    gap: 25px;
+    gap: 30px;
   }
 
   .card .result p {
