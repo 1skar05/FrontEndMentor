@@ -157,7 +157,7 @@ p {
   color: var(--white);
   border-radius: 25px;
   font-size: 18px;
-  padding: 12px;
+  padding: 15px;
 }
 
 @media screen and (min-width: 768px) {
