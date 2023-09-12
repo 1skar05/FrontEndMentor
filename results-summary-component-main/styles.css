@@ -187,6 +187,7 @@ p {
 
   .card .result p {
     min-width: 250px;
+    padding-bottom: 20px;
   }
 
   .card .result .circle {
