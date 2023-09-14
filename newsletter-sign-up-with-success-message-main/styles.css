@@ -82,3 +82,7 @@ body {
   color: var(--white);
   font-weight: 700;
 }
+
+.modal {
+  display: none;
+}

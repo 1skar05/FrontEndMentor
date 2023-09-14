@@ -51,12 +51,14 @@
         <div class="email-wrapper">
           <p>Email address</p>
           <input
-            type="text"
+            type="email"
             name="email"
+            pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+            required
             id="email"
             placeholder="email@company.com"
           />
-          <button type="button">Subscribe to monthly newsletter</button>
+          <button type="submit">Subscribe to monthly newsletter</button>
         </div>
       </div>
 
@@ -64,7 +66,7 @@
 
       <!-- Success message start -->
 
-      <div>
+      <div class="modal">
         Thanks for subscribing! A confirmation email has been sent to
         ash@loremcompany.com. Please open it and click the button inside to
         confirm your subscription. Dismiss message
