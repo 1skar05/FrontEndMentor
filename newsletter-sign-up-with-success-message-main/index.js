@@ -21,5 +21,5 @@ btnSubscribe.addEventListener("click", function () {
 
 btnDismiss.addEventListener("click", function () {
   modal.classList.remove("modal-open");
-  formWrapper.style.display = "unset";
+  formWrapper.style.cssText = null;
 });

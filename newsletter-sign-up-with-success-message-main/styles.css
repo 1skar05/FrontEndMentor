@@ -86,6 +86,8 @@ p {
   margin-bottom: 20px;
 }
 .email-wrapper input:required:invalid {
+  color: var(--tomato);
+  background-color: hsla(4, 100%, 67%, 0.2);
   border-color: var(--tomato);
   outline: none;
 }
