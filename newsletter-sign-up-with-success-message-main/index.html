@@ -26,50 +26,59 @@
   </head>
   <body>
     <div class="container">
-      <div class="illustration"></div>
-      <!-- Sign-up form start -->
-      <div class="signup">
-        <h1 class="title">Stay updated!</h1>
-        <p>Join 60,000+ product managers receiving monthly updates on:</p>
-        <ul>
-          <li>
-            <img src="assets/images/icon-success.svg" alt="" /><span
-              >Product discovery and building what matters</span
-            >
-          </li>
-          <li>
-            <img src="assets/images/icon-success.svg" alt="" /><span
-              >Measuring to ensure updates are a success</span
-            >
-          </li>
-          <li>
-            <img src="assets/images/icon-success.svg" alt="" /><span
-              >And much more!</span
-            >
-          </li>
-        </ul>
-        <div class="email-wrapper">
-          <p>Email address</p>
-          <input
-            type="email"
-            name="email"
-            pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-            required
-            id="email"
-            placeholder="email@company.com"
-          />
-          <button type="submit">Subscribe to monthly newsletter</button>
+      <div class="form-wrapper">
+        <div class="illustration"></div>
+        <!-- Sign-up form start -->
+        <div class="signup form-style">
+          <h1 class="title">Stay updated!</h1>
+          <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="" /><span
+                >Product discovery and building what matters</span
+              >
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="" /><span
+                >Measuring to ensure updates are a success</span
+              >
+            </li>
+            <li>
+              <img src="assets/images/icon-list.svg" alt="" /><span
+                >And much more!</span
+              >
+            </li>
+          </ul>
+          <div class="email-wrapper">
+            <p>Email address</p>
+            <input
+              type="email"
+              name="email"
+              pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+              required
+              id="email"
+              placeholder="email@company.com"
+            />
+            <button class="btn-submit" type="submit">
+              Subscribe to monthly newsletter
+            </button>
+          </div>
         </div>
-      </div>
 
-      <!-- Sign-up form end -->
+        <!-- Sign-up form end -->
+      </div>
 
       <!-- Success message start -->
 
-      <div class="modal">
-        Thanks for subscribing! A confirmation email has been sent to
-        ash@loremcompany.com. Please open it and click the button inside to
-        confirm your subscription. Dismiss message
+      <div class="modal form-style">
+        <img src="assets/images/icon-success.svg" alt="" />
+        <h1 class="title">Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <span class="target-email">ash@loremcompany.com</span>. Please open it
+          and click the button inside to confirm your subscription.
+        </p>
+        <button class="btn-submit" type="submit">Dismiss message</button>
       </div>
 
       <!-- Success message end -->

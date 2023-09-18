@@ -16,12 +16,19 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
 }
+p {
+  line-height: 1.5;
+}
 
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.form-wrapper {
+  /* display: none; */
 }
 
 .illustration {
@@ -34,13 +41,14 @@ body {
   border-radius: 0 0 15px 15px;
 }
 
-.signup {
+.form-style {
   padding: 30px;
 }
-.signup .title {
+.title {
   padding-bottom: 15px;
   font-weight: 700;
   color: var(--dark-slate-grey);
+  font-size: 2.5rem;
 }
 
 .signup ul {
@@ -54,9 +62,8 @@ body {
 }
 
 .signup ul > li > img {
-  width: 20px;
-  height: 20px;
   padding-right: 10px;
+  align-self: flex-start;
 }
 
 .email-wrapper p {
@@ -71,10 +78,12 @@ body {
   border: 1px solid var(--grey);
   padding: 20px;
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
-.email-wrapper button {
+.btn-submit {
+  font-size: 14px;
   width: 100%;
-  margin: 20px 0;
+  margin-top: auto;
   padding: 15px;
   border-radius: 5px;
   background: var(--dark-slate-grey);
@@ -84,5 +93,17 @@ body {
 }
 
 .modal {
-  display: none;
+  /* display: none; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.modal img {
+  align-self: start;
+}
+
+.modal .target-email {
+  color: var(--dark-slate-grey);
+  font-weight: 700;
 }
