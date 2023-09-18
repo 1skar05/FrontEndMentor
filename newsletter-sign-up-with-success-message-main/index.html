@@ -19,58 +19,55 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-
     <title>
       Frontend Mentor | Newsletter sign-up form with success message
     </title>
   </head>
   <body>
     <div class="container">
-      <div class="form-wrapper">
-        <div class="illustration"></div>
-        <!-- Sign-up form start -->
-        <div class="signup form-style">
-          <h1 class="title">Stay updated!</h1>
-          <p>Join 60,000+ product managers receiving monthly updates on:</p>
-          <ul>
-            <li>
-              <img src="assets/images/icon-list.svg" alt="" /><span
-                >Product discovery and building what matters</span
-              >
-            </li>
-            <li>
-              <img src="assets/images/icon-list.svg" alt="" /><span
-                >Measuring to ensure updates are a success</span
-              >
-            </li>
-            <li>
-              <img src="assets/images/icon-list.svg" alt="" /><span
-                >And much more!</span
-              >
-            </li>
-          </ul>
-          <div class="email-wrapper">
-            <p>Email address</p>
-            <input
-              type="email"
-              name="email"
-              pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
-              required
-              id="email"
-              placeholder="email@company.com"
-            />
-            <button class="btn-submit" type="submit">
-              Subscribe to monthly newsletter
-            </button>
-          </div>
+      <div class="illustration"></div>
+      <!-- Sign-up form start -->
+      <div class="signup form-style">
+        <h1 class="title">Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li>
+            <img src="assets/images/icon-list.svg" alt="" /><span
+              >Product discovery and building what matters</span
+            >
+          </li>
+          <li>
+            <img src="assets/images/icon-list.svg" alt="" /><span
+              >Measuring to ensure updates are a success</span
+            >
+          </li>
+          <li>
+            <img src="assets/images/icon-list.svg" alt="" /><span
+              >And much more!</span
+            >
+          </li>
+        </ul>
+        <div class="email-wrapper">
+          <p>Email address</p>
+          <input
+            type="email"
+            name="email"
+            pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/"
+            required
+            id="email"
+            placeholder="email@company.com"
+          />
+          <button class="btn-submit" type="submit" id="subscribe">
+            Subscribe to monthly newsletter
+          </button>
         </div>
-
-        <!-- Sign-up form end -->
       </div>
+
+      <!-- Sign-up form end -->
 
       <!-- Success message start -->
 
-      <div class="modal form-style">
+      <div class="modal form-style" id="modal">
         <img src="assets/images/icon-success.svg" alt="" />
         <h1 class="title">Thanks for subscribing!</h1>
         <p>
@@ -78,10 +75,15 @@
           <span class="target-email">ash@loremcompany.com</span>. Please open it
           and click the button inside to confirm your subscription.
         </p>
-        <button class="btn-submit" type="submit">Dismiss message</button>
+        <button class="btn-submit" type="submit" id="dismiss">
+          Dismiss message
+        </button>
       </div>
 
       <!-- Success message end -->
     </div>
+
+    <!-- js -->
+    <script src="index.js"></script>
   </body>
 </html>
