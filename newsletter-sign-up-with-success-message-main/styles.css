@@ -132,13 +132,20 @@ p {
 /* Desktop */
 @media screen and (min-width: 768px) {
   body {
-    background: var(--dark-slate-grey);
+    background: var(--charcoal-grey);
+  }
+  p {
+    line-height: normal;
   }
   .container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .form-style {
+    padding: 20px 50px;
+    min-width: 400px;
   }
   .form-wrapper {
     display: flex;
@@ -150,11 +157,13 @@ p {
   }
   .illustration {
     background-image: url("assets/images/illustration-sign-up-desktop.svg");
-    height: 70vh;
-    width: 500px;
+    min-height: 65vh;
+    min-width: 350px;
+    border-radius: 15px;
   }
   .title {
     white-space: nowrap;
+    font-size: 3rem;
   }
   .modal {
     max-width: 550px;
