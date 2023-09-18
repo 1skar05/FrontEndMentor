@@ -62,11 +62,20 @@ p {
   align-self: flex-start;
 }
 
-.email-wrapper p {
+.email-wrapper .email-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-wrapper .email-header p {
   font-size: 14px;
   color: var(--dark-slate-grey);
   font-weight: 700;
   padding: 10px 0;
+}
+#error {
+  display: none;
+  color: var(--tomato);
 }
 .email-wrapper input {
   width: 100%;
@@ -75,6 +84,10 @@ p {
   padding: 20px;
   box-sizing: border-box;
   margin-bottom: 20px;
+}
+.email-wrapper input:required:invalid {
+  border-color: var(--tomato);
+  outline: none;
 }
 .btn-submit {
   font-size: 14px;
@@ -95,7 +108,6 @@ p {
 .modal {
   display: none;
   top: 0;
-  height: 95vh;
   flex-direction: column;
   gap: 20px;
   background: var(--white);
@@ -113,4 +125,40 @@ p {
   position: fixed;
   overflow: hidden;
   display: flex;
+}
+
+/* Desktop */
+@media screen and (min-width: 768px) {
+  body {
+    background: var(--dark-slate-grey);
+  }
+  .container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .form-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+  }
+  .illustration {
+    background-image: url("assets/images/illustration-sign-up-desktop.svg");
+    height: 70vh;
+    width: 500px;
+  }
+  .title {
+    white-space: nowrap;
+  }
+  .modal {
+    max-width: 550px;
+    border-radius: 20px;
+  }
+  .modal-open {
+    position: static;
+  }
 }
