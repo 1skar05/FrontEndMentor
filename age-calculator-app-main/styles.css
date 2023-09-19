@@ -1,0 +1,41 @@
+/* Colors */
+:root {
+  /* Primary */
+  --purple: 259, 100%, 65%;
+  --light-red: 0, 100%, 67%;
+
+  /* Neutral */
+  --white: 259, 100%, 65%;
+  --off-white: 0, 100%, 67%;
+  --light-grey: 0, 0%, 86%;
+  --smokey-grey: 0, 1%, 44%;
+  --off-black: 0, 0%, 8%;
+}
+
+/* Fonts */
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("assets/fonts/Poppins-ExtraBoldItalic.ttf");
+  font-weight: 800;
+  font-style: italic;
+}
