@@ -19,7 +19,31 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    Day DD Month MM Year YYYY -- years -- months -- days
+    <div class="card">
+      <div class="input-field">
+        <div class="date-time">
+          <label for="date">DAY</label>
+          <input type="number" placeholder="DD" />
+        </div>
+        <div class="date-time">
+          <label for="date">MONTH</label>
+          <input type="number" placeholder="MM" />
+        </div>
+        <div class="date-time">
+          <label for="date">YEAR</label>
+          <input type="number" placeholder="YYYY" />
+        </div>
+      </div>
+      <div class="divider">
+        <hr />
+        <img src="assets/images/icon-arrow.svg" alt="" />
+      </div>
+      <div class="result">
+        <p><span class="highlight">38</span> years</p>
+        <p><span class="highlight">--</span> months</p>
+        <p><span class="highlight">--</span> days</p>
+      </div>
+    </div>
 
     <!-- scripts -->
     <script src="index.js"></script>
