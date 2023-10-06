@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -15,38 +14,36 @@
     <title>Frontend Mentor | Age calculator app</title>
 
     <link rel="stylesheet" href="styles.css" />
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
     <div class="card">
       <div class="input-field">
         <div class="date-time">
           <label for="date">DAY</label>
-          <input type="text" maxlength="2" placeholder="DD" />
-          <p class="error">This field is required</p>
+          <input type="text" maxlength="2" placeholder="DD" id="input-day" />
+          <p class="error" id="error-day"></p>
         </div>
         <div class="date-time">
           <label for="date">MONTH</label>
-          <input type="text" maxlength="2" placeholder="MM" />
-          <p class="error">This field is required</p>
+          <input type="text" maxlength="2" placeholder="MM" id="input-month" />
+          <p class="error" id="error-month"></p>
         </div>
         <div class="date-time">
           <label for="date">YEAR</label>
-          <input type="text" maxlength="4" placeholder="YYYY" />
-          <p class="error">This field is required</p>
+          <input type="text" maxlength="4" placeholder="YYYY" id="input-year" />
+          <p class="error" id="error-year"></p>
         </div>
       </div>
       <div class="divider">
         <hr />
-        <button class="submit">
+        <button class="submit" id="btn-submit">
           <img src="assets/images/icon-arrow.svg" alt="" />
         </button>
       </div>
       <div class="result">
-        <p><span class="highlight">38</span> years</p>
-        <p><span class="highlight">3</span> months</p>
-        <p><span class="highlight">--</span> days</p>
+        <p><span class="highlight" id="result-years">--</span> years</p>
+        <p><span class="highlight" id="result-months">--</span> months</p>
+        <p><span class="highlight" id="result-days">--</span> days</p>
       </div>
     </div>
 

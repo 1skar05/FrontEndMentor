@@ -57,7 +57,7 @@ body {
   border-radius: 1.5em;
   border-bottom-right-radius: 6.5em;
   padding: 50px 20px 20px 20px;
-  margin: 90px 10px;
+  /* margin: 90px 10px; */
 }
 
 .input-field {
@@ -87,6 +87,9 @@ body {
   font-weight: 700;
   color: hsl(var(--smokey-grey), 0.8);
   letter-spacing: 3px;
+}
+.input-field .input-focus {
+  outline: 0.5px solid hsl(var(--light-red));
 }
 .input-field .error {
   margin: 0;
