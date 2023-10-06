@@ -164,9 +164,8 @@ body {
 
   .input-field input {
     font-size: 2em;
-    max-width: 200px;
+    max-width: 150px;
     max-height: 90px;
-    padding: 12px 24px;
   }
   .input-field .error {
     font-size: 14px;
