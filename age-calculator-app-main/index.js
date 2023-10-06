@@ -156,6 +156,9 @@ btnSubmit.addEventListener("click", function (e) {
       currentMonth,
       currentYear
     );
+    incNumber("result-years");
+    incNumber("result-months");
+    incNumber("result-days");
   }
 });
 
@@ -163,4 +166,21 @@ resetState(inputDay, errorDay);
 resetState(inputMonth, errorMonth);
 resetState(inputYear, errorYear);
 
-// TODO: add animation
+var delay = 20;
+
+function incNumber(id) {
+  elt = document.getElementById(id);
+  endNbr = Number(document.getElementById(id).innerHTML);
+  incNbrRec(0, endNbr, elt);
+}
+
+/*A recursive function to increase the number.*/
+function incNbrRec(i, endNbr, elt) {
+  if (i <= endNbr) {
+    elt.innerHTML = i;
+    setTimeout(function () {
+      //Delay a bit before calling the function again.
+      incNbrRec(i + 1, endNbr, elt);
+    }, delay);
+  }
+}
