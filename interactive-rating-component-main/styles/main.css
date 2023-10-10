@@ -23,6 +23,9 @@ body {
   background-color: hsla(213, 19%, 18%, 0.6);
 }
 
+.rating-state {
+  display: none;
+}
 .rating-state__icon {
   background-color: hsla(210, 19%, 18%, 0.8);
   border-radius: 50%;
@@ -91,5 +94,33 @@ body {
 }
 
 .thankyou-state {
-  display: none;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.thankyou-state__illust {
+  box-sizing: border-box;
+  align-self: center;
+}
+.thankyou-state__result {
+  color: hsl(25, 97%, 53%);
+  border-radius: 25px;
+  background-color: hsla(210, 19%, 18%, 0.8);
+  display: inline-block;
+  padding: 5px 15px;
+  align-self: center;
+  margin: 25px 0;
+}
+.thankyou-state__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+}
+.thankyou-state__content {
+  color: hsl(216, 12%, 54%);
+  margin-top: 15px;
 }/*# sourceMappingURL=main.css.map */

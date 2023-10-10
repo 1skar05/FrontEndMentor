@@ -89,10 +89,41 @@ body {
     }
     margin-bottom: 10px;
   }
+  display: none;
 }
 
 .thankyou-state {
-  display: none;
+  // display: none;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  color: base.$white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &__illust {
+    box-sizing: border-box;
+    align-self: center;
+  }
+  &__result {
+    color: base.$orange;
+    border-radius: 25px;
+    background-color: base.$dark-blue-icon;
+    display: inline-block;
+    padding: 5px 15px;
+    align-self: center;
+    margin: 25px 0;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    // padding: 15px 0;
+    color: base.$white;
+  }
+  &__content {
+    color: base.$medium-grey;
+    margin-top: 15px;
+  }
 }
 
 // Desktop
