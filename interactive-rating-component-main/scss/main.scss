@@ -38,17 +38,17 @@ body {
   }
   &__content {
     color: base.$medium-grey;
-    padding-bottom: 20px;
   }
   &__rating {
     color: base.$light-grey;
     padding: 0;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
     li {
       list-style: none;
-      background-color: hsla(213, 19%, 18%, 0.4);
+      background-color: base.$dark-blue-icon;
       border-radius: 50%;
       border: none;
       width: 40px;
@@ -78,7 +78,6 @@ body {
     background-color: base.$orange;
     color: base.$white;
     letter-spacing: 2px;
-    font-weight: 700;
     box-sizing: border-box;
     width: 100%;
     border-radius: 25px;
@@ -88,6 +87,7 @@ body {
       background-color: base.$white;
       color: base.$orange;
     }
+    margin-bottom: 10px;
   }
 }
 
