@@ -1,20 +1,85 @@
-body {
+* {
   margin: 0;
   padding: 0;
   font-family: "Overpass";
   font-size: 15px;
 }
 
+body {
+  background-color: hsl(216, 12%, 8%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .card {
-  padding: 30px;
+  padding: 20px;
+  margin: 0 20px;
+  border-radius: 15px;
+  background-color: hsla(213, 19%, 18%, 0.4);
 }
 
 .rating-state__icon {
-  background-color: hsl(213, 19%, 18%);
+  background-color: hsla(210, 19%, 18%, 0.5);
   border-radius: 50%;
-  padding: 10px;
+  padding: 15px;
+  width: 15px;
+  height: 15px;
 }
 .rating-state__title {
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 700;
+  padding: 15px 0;
+  color: hsl(0, 0%, 100%);
+}
+.rating-state__content {
+  color: hsl(216, 12%, 54%);
+  padding-bottom: 20px;
+}
+.rating-state__rating {
+  color: hsl(217, 12%, 39%);
+  padding: 0;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.rating-state__rating li {
+  list-style: none;
+  background-color: hsla(213, 19%, 18%, 0.4);
+  border-radius: 50%;
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rating-state__rating li:hover {
+  background-color: hsl(217, 12%, 39%);
+}
+.rating-state__rating li a {
+  text-decoration: none;
+  color: hsl(216, 12%, 54%);
+}
+.rating-state__rating li a:active {
+  background-color: hsl(25, 97%, 53%);
+}
+.rating-state__button {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 2px;
+  font-weight: 700;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 25px;
+  border: none;
+  padding: 15px;
+}
+
+.thankyou-state {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
