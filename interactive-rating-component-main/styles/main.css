@@ -61,12 +61,18 @@ body {
 .rating-state__rating li:hover {
   background-color: hsl(217, 12%, 39%);
 }
+.rating-state__rating li:hover a {
+  color: hsl(0, 0%, 100%);
+}
 .rating-state__rating li a {
   text-decoration: none;
   color: hsl(216, 12%, 54%);
 }
-.rating-state__rating li a:active {
+.rating-state__rating .active {
   background-color: hsl(25, 97%, 53%);
+}
+.rating-state__rating .active a {
+  color: hsl(0, 0%, 100%);
 }
 .rating-state__button {
   background-color: hsl(25, 97%, 53%);
@@ -78,6 +84,10 @@ body {
   border-radius: 25px;
   border: none;
   padding: 15px;
+}
+.rating-state__button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
 }
 
 .thankyou-state {

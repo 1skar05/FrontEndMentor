@@ -58,13 +58,19 @@ body {
       justify-content: center;
       &:hover {
         background-color: base.$light-grey;
+        a {
+          color: base.$white;
+        }
       }
       a {
         text-decoration: none;
         color: base.$medium-grey;
-        &:active {
-          background-color: base.$orange;
-        }
+      }
+    }
+    .active {
+      background-color: base.$orange;
+      a {
+        color: base.$white;
       }
     }
   }
@@ -78,6 +84,10 @@ body {
     border-radius: 25px;
     border: none;
     padding: 15px;
+    &:hover {
+      background-color: base.$white;
+      color: base.$orange;
+    }
   }
 }
 
