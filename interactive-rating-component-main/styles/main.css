@@ -57,21 +57,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: hsl(216, 12%, 54%);
 }
 .rating-state__rating li:hover {
   background-color: hsl(217, 12%, 39%);
-}
-.rating-state__rating li:hover a {
   color: hsl(0, 0%, 100%);
 }
-.rating-state__rating li a {
-  text-decoration: none;
-  color: hsl(216, 12%, 54%);
-}
-.rating-state__rating .active {
+.rating-state__rating li.active {
   background-color: hsl(25, 97%, 53%);
-}
-.rating-state__rating .active a {
   color: hsl(0, 0%, 100%);
 }
 .rating-state__button {
