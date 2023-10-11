@@ -83,4 +83,46 @@ body {
   transition: all 0.3s ease-in-out;
   box-sizing: border-box;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .product-card {
+    display: flex;
+    max-width: 600px;
+    margin: 0;
+    justify-content: space-between;
+  }
+  .product-card__illustration {
+    background-image: url("/images/image-product-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px 0 0 10px;
+  }
+  .product-card__details {
+    max-width: 240px;
+    padding: 30px;
+    border-radius: 0 10px 10px 0;
+  }
+  .product-card__brand {
+    margin-bottom: 10px;
+  }
+  .product-card__product-details {
+    text-wrap: balance;
+    font-size: 13px;
+    margin-bottom: 30px;
+  }
+  .product-card__price {
+    margin-bottom: 30px;
+  }
+  .product-card__button:hover {
+    background-color: hsl(212, 21%, 14%);
+  }
 }/*# sourceMappingURL=main.css.map */
