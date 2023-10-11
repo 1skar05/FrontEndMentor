@@ -69,11 +69,13 @@ body {
   text-decoration: line-through;
 }
 .product-card__button {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
   background-color: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  text-transform: uppercase;
   padding: 15px 30px;
   border-radius: 10px;
   border: none;

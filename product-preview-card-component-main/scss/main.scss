@@ -72,11 +72,13 @@ body {
     text-decoration: line-through;
   }
   &__button {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
     background-color: base.$dark-cyan;
     color: base.$very-light-gray;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
-    text-transform: uppercase;
     padding: 15px 30px;
     border-radius: 10px;
     border: none;
