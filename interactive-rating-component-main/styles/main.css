@@ -23,9 +23,6 @@ body {
   background-color: hsla(213, 19%, 18%, 0.6);
 }
 
-.rating-state {
-  display: none;
-}
 .rating-state__icon {
   background-color: hsla(210, 19%, 18%, 0.8);
   border-radius: 50%;
@@ -94,11 +91,11 @@ body {
 }
 
 .thankyou-state {
+  display: none;
   margin-top: 15px;
   margin-bottom: 25px;
   color: hsl(0, 0%, 100%);
   text-align: center;
-  display: flex;
   justify-content: center;
   flex-direction: column;
 }
@@ -123,4 +120,14 @@ body {
 .thankyou-state__content {
   color: hsl(216, 12%, 54%);
   margin-top: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    max-width: 350px;
+    padding: 25px;
+  }
+  .thankyou-state__content {
+    padding: 0 5px;
+  }
 }/*# sourceMappingURL=main.css.map */

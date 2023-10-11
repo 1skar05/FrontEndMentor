@@ -89,16 +89,16 @@ body {
     }
     margin-bottom: 10px;
   }
-  display: none;
+  // display: none;
 }
 
 .thankyou-state {
-  // display: none;
+  display: none;
   margin-top: 15px;
   margin-bottom: 25px;
   color: base.$white;
   text-align: center;
-  display: flex;
+  // display: flex;
   justify-content: center;
   flex-direction: column;
   &__illust {
@@ -117,7 +117,6 @@ body {
   &__title {
     font-size: 24px;
     font-weight: 700;
-    // padding: 15px 0;
     color: base.$white;
   }
   &__content {
@@ -128,4 +127,13 @@ body {
 
 // Desktop
 @media only screen and (min-width: 768px) {
+  .card {
+    max-width: 350px;
+    padding: 25px;
+  }
+  .thankyou-state {
+    &__content {
+      padding: 0 5px;
+    }
+  }
 }
