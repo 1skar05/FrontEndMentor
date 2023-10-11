@@ -18,7 +18,8 @@ ratingStarts.map((star) => {
   star.addEventListener("click", changeActiveClass);
 });
 
-btnSubmit.addEventListener("click", () => {
+btnSubmit.addEventListener("click", (e) => {
+  e.preventDefault();
   const ratingResult = document.getElementsByClassName(
     "rating-state__rating-star active"
   )[0].textContent;
