@@ -127,6 +127,10 @@ body {
     max-width: 350px;
     padding: 25px;
   }
+  .rating-state__rating li {
+    width: 50px;
+    height: 50px;
+  }
   .thankyou-state__content {
     padding: 0 5px;
   }
