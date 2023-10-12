@@ -114,6 +114,9 @@ body {
   .product-card__brand {
     margin-bottom: 10px;
   }
+  .product-card__product-name {
+    line-height: 1;
+  }
   .product-card__product-details {
     text-wrap: balance;
     font-size: 13px;
