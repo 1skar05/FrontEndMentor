@@ -30,7 +30,7 @@ body {
   color: hsl(228, 12%, 48%);
   text-transform: uppercase;
   font-size: 12px;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
   margin-bottom: 5px;
 }
 .product-card__product-name {
