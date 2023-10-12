@@ -112,10 +112,11 @@ body {
     border-radius: 0 10px 10px 0;
   }
   .product-card__brand {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
   .product-card__product-name {
     line-height: 1;
+    margin-bottom: 25px;
   }
   .product-card__product-details {
     text-wrap: balance;
