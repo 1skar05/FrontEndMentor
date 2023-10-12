@@ -118,6 +118,9 @@ body {
     &__brand {
       margin-bottom: 10px;
     }
+    &__product-name {
+      line-height: 1;
+    }
     &__product-details {
       text-wrap: balance;
       font-size: 13px;
