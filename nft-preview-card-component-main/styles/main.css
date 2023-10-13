@@ -6,4 +6,121 @@
 
 html {
   height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: hsl(217, 54%, 11%);
+  height: 100%;
+}
+
+.card {
+  margin: 25px;
+  padding: 25px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+}
+.card__image {
+  position: relative;
+  margin-bottom: 20px;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card__image:hover {
+  background-color: hsl(178, 100%, 50%);
+}
+.card__image:hover .card__image-view {
+  opacity: 1;
+}
+.card__image:hover .card__image-etherium {
+  opacity: 0.5;
+}
+.card__image-etherium {
+  width: 100%;
+  border-radius: 10px;
+}
+.card__image-view {
+  transition: 0.5 ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.card__title {
+  font-size: 22px;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.card__title:hover {
+  color: hsl(178, 100%, 50%);
+}
+.card__description {
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 15px;
+}
+.card__coin-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.card__price {
+  font-weight: 600;
+  color: hsl(178, 100%, 50%);
+  display: flex;
+  gap: 5px;
+}
+.card__price img {
+  width: 13px;
+  height: 21px;
+}
+.card__duration {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+  display: flex;
+  gap: 10px;
+}
+.card__duration img {
+  width: 23px;
+  height: 23px;
+}
+.card hr {
+  border: 1px solid hsl(215, 32%, 27%);
+}
+.card__creator {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+.card__creator img {
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+.card__creator-name {
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+.card__creator-name:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 350px;
+  }
 }/*# sourceMappingURL=main.css.map */

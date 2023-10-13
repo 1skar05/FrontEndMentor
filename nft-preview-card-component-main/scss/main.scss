@@ -9,3 +9,122 @@
 html {
   height: 100%;
 }
+
+// Mobile
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  background-color: base.$very-dark-blue-main-bg;
+  height: 100%;
+}
+.card {
+  margin: 25px;
+  padding: 25px;
+  background-color: base.$very-dark-blue-card-bg;
+  border-radius: 15px;
+  &__image {
+    position: relative;
+    margin-bottom: 20px;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover {
+      background-color: base.$cyan;
+      .card__image-view {
+        opacity: 1;
+      }
+      .card__image-etherium {
+        opacity: 0.5;
+      }
+    }
+    &-etherium {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    &-view {
+      transition: 0.5 ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__title {
+    font-size: 22px;
+    font-weight: 600;
+    color: base.$white;
+    margin-bottom: 15px;
+    cursor: pointer;
+    &:hover {
+      color: base.$cyan;
+    }
+  }
+  &__description {
+    font-weight: 300;
+    color: base.$soft-blue;
+    margin-bottom: 15px;
+  }
+  &__coin-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  &__price {
+    font-weight: 600;
+    color: base.$cyan;
+    display: flex;
+    gap: 5px;
+    img {
+      width: 13px;
+      height: 21px;
+    }
+  }
+  &__duration {
+    color: base.$soft-blue;
+    font-weight: 300;
+    display: flex;
+    gap: 10px;
+    img {
+      width: 23px;
+      height: 23px;
+    }
+  }
+  hr {
+    border: 1px solid base.$very-dark-blue-line;
+  }
+  &__creator {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: base.$soft-blue;
+    font-weight: 300;
+    img {
+      border: 1px solid base.$white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+    }
+    &-name {
+      color: base.$white;
+      cursor: pointer;
+      &:hover {
+        color: base.$cyan;
+      }
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 350px;
+  }
+}
