@@ -23,11 +23,12 @@ body {
 .card {
   margin: 25px;
   padding: 25px;
+  max-width: 350px;
   background-color: base.$very-dark-blue-card-bg;
   border-radius: 15px;
   &__image {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     max-width: 300px;
     max-height: 300px;
     border-radius: 10px;
@@ -59,7 +60,7 @@ body {
     font-size: 22px;
     font-weight: 600;
     color: base.$white;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     cursor: pointer;
     &:hover {
       color: base.$cyan;
@@ -67,8 +68,8 @@ body {
   }
   &__description {
     font-weight: 300;
-    color: base.$soft-blue;
-    margin-bottom: 15px;
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 25px;
   }
   &__coin-info {
     display: flex;
@@ -119,12 +120,5 @@ body {
         color: base.$cyan;
       }
     }
-  }
-}
-
-// Desktop
-@media screen and (min-width: 768px) {
-  .card {
-    max-width: 350px;
   }
 }

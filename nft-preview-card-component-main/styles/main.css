@@ -21,12 +21,13 @@ body {
 .card {
   margin: 25px;
   padding: 25px;
+  max-width: 350px;
   background-color: hsl(216, 50%, 16%);
   border-radius: 15px;
 }
 .card__image {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   max-width: 300px;
   max-height: 300px;
   border-radius: 10px;
@@ -57,7 +58,7 @@ body {
   font-size: 22px;
   font-weight: 600;
   color: hsl(0, 0%, 100%);
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   cursor: pointer;
 }
 .card__title:hover {
@@ -66,7 +67,7 @@ body {
 .card__description {
   font-weight: 300;
   color: hsl(215, 51%, 70%);
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 .card__coin-info {
   display: flex;
@@ -117,10 +118,4 @@ body {
 }
 .card__creator-name:hover {
   color: hsl(178, 100%, 50%);
-}
-
-@media screen and (min-width: 768px) {
-  .card {
-    max-width: 350px;
-  }
 }/*# sourceMappingURL=main.css.map */
