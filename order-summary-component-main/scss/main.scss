@@ -123,24 +123,20 @@ body {
     &__img {
       max-width: none;
     }
+    &__detail {
+      padding: 50px;
+    }
     &__title {
-      font-size: 32px;
+      font-size: 28px;
     }
     &__text {
-      font-size: 18px;
-      padding: 0 30px;
+      font-size: 16px;
     }
     &__annual-plan {
       padding: 20px;
     }
     &__annual-wrapper {
       gap: 20px;
-    }
-    &__plan {
-      font-size: 18px;
-    }
-    &__change {
-      font-size: 16px;
     }
     &__button {
       font-size: 20px;

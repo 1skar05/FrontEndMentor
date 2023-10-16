@@ -134,24 +134,20 @@ body {
   .card__img {
     max-width: none;
   }
+  .card__detail {
+    padding: 50px;
+  }
   .card__title {
-    font-size: 32px;
+    font-size: 28px;
   }
   .card__text {
-    font-size: 18px;
-    padding: 0 30px;
+    font-size: 16px;
   }
   .card__annual-plan {
     padding: 20px;
   }
   .card__annual-wrapper {
     gap: 20px;
-  }
-  .card__plan {
-    font-size: 18px;
-  }
-  .card__change {
-    font-size: 16px;
   }
   .card__button {
     font-size: 20px;
