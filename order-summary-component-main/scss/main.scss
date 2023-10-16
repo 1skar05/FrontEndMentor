@@ -1,1 +1,25 @@
 @use "base";
+
+// mobile
+body {
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  margin: 70px 25px;
+
+  &__img {
+    max-width: 325px;
+    border-radius: 15px 15px 0 0;
+    display: block;
+    object-fit: cover;
+  }
+  &__detail {
+    background-color: base.$very-pale-blue;
+  }
+}
