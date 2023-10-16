@@ -25,14 +25,25 @@
     <div class="card">
       <img src="images/illustration-hero.svg" alt="" class="card__img" />
       <div class="card__detail">
-        <h1>Order Summary</h1>
-        <p>
+        <h1 class="card__title">Order Summary</h1>
+        <p class="card__text">
           You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
         </p>
-        <div>Annual Plan $59.99/year Change</div>
-        <button>Proceed to Payment</button>
-        <button>Cancel Order</button>
+        <div class="card__annual-plan">
+          <div class="card__annual-wrapper">
+            <img src="images/icon-music.svg" alt="" />
+            <div class="card__plan">
+              <p class="card__plan-text">Annual Plan</p>
+              <p class="card__plan-price">$59.99/year</p>
+            </div>
+          </div>
+          <a class="card__change" href="#">Change</a>
+        </div>
+        <button class="card__button card__button--proceed">
+          Proceed to Payment
+        </button>
+        <button class="card__button card__button--cancel">Cancel Order</button>
       </div>
     </div>
   </body>

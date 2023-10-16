@@ -14,23 +14,149 @@ body {
 body {
   background-image: url(../images/pattern-background-mobile.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-color: hsl(225, 100%, 94%);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .card {
   margin: 70px 25px;
+  max-width: 330px;
 }
 .card__img {
-  max-width: 325px;
+  max-width: 330px;
   border-radius: 15px 15px 0 0;
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .card__detail {
-  background-color: hsl(225, 100%, 98%);
+  background-color: white;
+  padding: 30px;
+  border-radius: 0 0 15px 15px;
+  text-align: center;
+  margin: 0 auto;
+}
+.card__title {
+  font-size: 22px;
+  font-weight: 900;
+  color: hsl(223, 47%, 23%);
+  margin-bottom: 15px;
+}
+.card__text {
+  color: hsl(224, 23%, 55%);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+.card__annual-plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: hsl(225, 100%, 98%);
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.card__annual-wrapper {
+  display: flex;
+  gap: 15px;
+}
+.card__plan {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.card__plan-text {
+  color: hsl(223, 47%, 23%);
+  font-weight: 700;
+}
+.card__plan-price {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+.card__change {
+  color: hsl(245, 75%, 52%);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: underline;
+  transition: 0.5s;
+  cursor: pointers;
+}
+.card__change:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+.card__button {
+  width: 100%;
+  border: none;
+  font-size: 17px;
+  font-weight: 700;
+}
+.card__button--proceed {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card__button--proceed:hover {
+  opacity: 0.7;
+}
+.card__button--cancel {
+  background-color: white;
+  color: hsl(224, 23%, 55%);
+  margin-top: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.card__button--cancel:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+  }
+  .card {
+    max-width: none;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+  }
+  .card__img {
+    max-width: none;
+  }
+  .card__title {
+    font-size: 32px;
+  }
+  .card__text {
+    font-size: 18px;
+    padding: 0 30px;
+  }
+  .card__annual-plan {
+    padding: 20px;
+  }
+  .card__annual-wrapper {
+    gap: 20px;
+  }
+  .card__plan {
+    font-size: 18px;
+  }
+  .card__change {
+    font-size: 16px;
+  }
+  .card__button {
+    font-size: 20px;
+  }
+  .card__button--cancel {
+    margin-top: 20px;
+  }
 }/*# sourceMappingURL=main.css.map */
