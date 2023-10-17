@@ -1,0 +1,72 @@
+@use "base";
+
+// Mobiles
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: base.$very-dark-blue;
+}
+
+.card {
+  max-width: 325px;
+
+  margin: 88px 25px;
+  display: flex;
+  flex-direction: column;
+  &__illustration {
+    background-image: url(../images/image-header-desktop.jpg);
+    width: 100%;
+    height: 240px;
+    border-radius: 5px 5px 0 0;
+  }
+  &__content {
+    padding: 30px;
+    background-color: base.$dark-desaturated-blue;
+    border-radius: 0 0 5px 5px;
+  }
+  &__title {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: base.$white;
+    margin-bottom: 20px;
+    &-highlight {
+      color: base.$soft-violet;
+    }
+  }
+  &__text {
+    font-family: "Inter";
+    font-weight: 400;
+    color: base.$slightly-transparent-white-main-paragraph;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  &__status-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  &__status {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+
+    &-counter {
+      font-family: "Inter", sans-serif;
+      color: base.$white;
+      font-size: 26px;
+      font-weight: 700;
+    }
+    &-text {
+      color: base.$slightly-transparent-white-stat-heading;
+      font-family: "Lexend Deca";
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+}
