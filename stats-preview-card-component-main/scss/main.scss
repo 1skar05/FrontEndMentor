@@ -7,28 +7,33 @@ body {
   justify-content: center;
   align-items: center;
   background-color: base.$very-dark-blue;
+  font-size: 15px;
+  margin: 88px 8px;
 }
 
 .card {
-  max-width: 325px;
-
-  margin: 88px 25px;
   display: flex;
   flex-direction: column;
+  max-width: 330px;
   &__illustration {
+    background-color: base.$soft-violet;
     background-image: url(../images/image-header-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
     width: 100%;
     height: 240px;
-    border-radius: 5px 5px 0 0;
+    border-radius: 10px 10px 0 0;
   }
   &__content {
     padding: 30px;
     background-color: base.$dark-desaturated-blue;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
   }
   &__title {
     font-family: "Inter", sans-serif;
-    text-align: center;
+
     color: base.$white;
     margin-bottom: 20px;
     &-highlight {
@@ -36,12 +41,11 @@ body {
     }
   }
   &__text {
-    font-family: "Inter";
+    font-family: "Lexend Deca", sans-serif;
     font-weight: 400;
     color: base.$slightly-transparent-white-main-paragraph;
     margin-bottom: 40px;
-    text-align: center;
-    line-height: 1.5;
+    line-height: 2;
   }
 
   &__status-wrapper {
@@ -53,20 +57,54 @@ body {
   &__status {
     display: flex;
     flex-direction: column;
-    text-align: center;
     gap: 10px;
 
     &-counter {
       font-family: "Inter", sans-serif;
       color: base.$white;
-      font-size: 26px;
       font-weight: 700;
     }
     &-text {
       color: base.$slightly-transparent-white-stat-heading;
       font-family: "Lexend Deca";
       text-transform: uppercase;
-      font-size: 14px;
+      font-size: 13px;
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .card {
+    max-width: none;
+    flex-direction: row-reverse;
+    max-height: 444px;
+    &__illustration {
+      background-image: url(../images/image-header-desktop.jpg);
+      height: 444px;
+      background-size: cover;
+      border-radius: 0 10px 10px 0;
+    }
+    &__content {
+      border-radius: 10px 0 0 10px;
+      padding: 70px;
+      text-align: left;
+    }
+    &__title {
+      margin-bottom: 30px;
+      font-size: 35px;
+    }
+    &__text {
+      max-width: none;
+      margin-bottom: 60px;
+      width: 90%;
+    }
+    &__status-wrapper {
+      flex-direction: row;
+      gap: 60px;
     }
   }
 }

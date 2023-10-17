@@ -14,28 +14,33 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsl(233, 47%, 7%);
+  font-size: 15px;
+  margin: 88px 8px;
 }
 
 .card {
-  max-width: 325px;
-  margin: 88px 25px;
   display: flex;
   flex-direction: column;
+  max-width: 330px;
 }
 .card__illustration {
+  background-color: hsl(277, 64%, 61%);
   background-image: url(../images/image-header-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
   width: 100%;
   height: 240px;
-  border-radius: 5px 5px 0 0;
+  border-radius: 10px 10px 0 0;
 }
 .card__content {
   padding: 30px;
   background-color: hsl(244, 38%, 16%);
-  border-radius: 0 0 5px 5px;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
 }
 .card__title {
   font-family: "Inter", sans-serif;
-  text-align: center;
   color: hsl(0, 0%, 100%);
   margin-bottom: 20px;
 }
@@ -43,12 +48,11 @@ body {
   color: hsl(277, 64%, 61%);
 }
 .card__text {
-  font-family: "Inter";
+  font-family: "Lexend Deca", sans-serif;
   font-weight: 400;
   color: hsla(0, 0%, 100%, 0.75);
   margin-bottom: 40px;
-  text-align: center;
-  line-height: 1.5;
+  line-height: 2;
 }
 .card__status-wrapper {
   display: flex;
@@ -59,18 +63,51 @@ body {
 .card__status {
   display: flex;
   flex-direction: column;
-  text-align: center;
   gap: 10px;
 }
 .card__status-counter {
   font-family: "Inter", sans-serif;
   color: hsl(0, 0%, 100%);
-  font-size: 26px;
   font-weight: 700;
 }
 .card__status-text {
   color: hsla(0, 0%, 100%, 0.6);
   font-family: "Lexend Deca";
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 13px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+  .card {
+    max-width: none;
+    flex-direction: row-reverse;
+    max-height: 444px;
+  }
+  .card__illustration {
+    background-image: url(../images/image-header-desktop.jpg);
+    height: 444px;
+    background-size: cover;
+    border-radius: 0 10px 10px 0;
+  }
+  .card__content {
+    border-radius: 10px 0 0 10px;
+    padding: 70px;
+    text-align: left;
+  }
+  .card__title {
+    margin-bottom: 30px;
+    font-size: 35px;
+  }
+  .card__text {
+    max-width: none;
+    margin-bottom: 60px;
+    width: 90%;
+  }
+  .card__status-wrapper {
+    flex-direction: row;
+    gap: 60px;
+  }
 }/*# sourceMappingURL=main.css.map */
