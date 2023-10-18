@@ -85,6 +85,21 @@ body {
     align-items: center;
   }
   .card-wrapper {
+    margin: 0;
     display: flex;
+  }
+  .card {
+    padding: 50px 45px;
+    max-width: 310px;
+  }
+  .card__icon {
+    margin-bottom: 35px;
+  }
+  .card__title {
+    margin-bottom: 35px;
+  }
+  .card__desc {
+    width: 90%;
+    margin-bottom: 85px;
   }
 }/*# sourceMappingURL=main.css.map */
