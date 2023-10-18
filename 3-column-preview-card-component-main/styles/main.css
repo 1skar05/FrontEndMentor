@@ -89,7 +89,6 @@ body {
     display: flex;
   }
   .card {
-    padding: 45px 50px;
     max-width: 310px;
   }
   .card__icon {
