@@ -89,7 +89,7 @@ body {
     display: flex;
   }
   .card {
-    padding: 45px;
+    padding: 45px 50px;
     max-width: 310px;
   }
   .card__icon {
@@ -99,8 +99,7 @@ body {
     margin-bottom: 35px;
   }
   .card__desc {
-    width: 90%;
-    margin-bottom: 85px;
+    margin-bottom: 70px;
   }
   .card__btn {
     font-size: 15px;
