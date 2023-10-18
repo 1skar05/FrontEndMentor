@@ -81,7 +81,7 @@
     display: flex;
   }
   .card {
-    padding: 50px 45px;
+    padding: 45px;
     max-width: 310px;
     &__icon {
       margin-bottom: 35px;
@@ -92,6 +92,9 @@
     &__desc {
       width: 90%;
       margin-bottom: 85px;
+    }
+    &__btn {
+      font-size: 15px;
     }
   }
 }
