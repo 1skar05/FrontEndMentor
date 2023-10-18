@@ -1,1 +1,82 @@
 @use "base";
+
+// Mobile
+
+.card-wrapper {
+  margin: 88px 25px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card {
+  &--sedans {
+    background-color: base.$bright-orange;
+  }
+  &--suvs {
+    background-color: base.$dark-cyan;
+  }
+  &--luxury {
+    background-color: base.$very-dark-cyan;
+  }
+
+  padding: 50px;
+
+  &__icon {
+    margin-bottom: 30px;
+  }
+  &__title {
+    font-family: "Big Shoulders Display";
+    font-size: 40px;
+    text-transform: uppercase;
+    color: base.$very-light-gray;
+    margin-bottom: 30px;
+  }
+  &__desc {
+    font-family: "Lexend Deca";
+    color: base.$transparent-white;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  &__btn {
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-family: "Lexend Deca";
+    font-size: 18px;
+    border: 1px solid base.$very-light-gray;
+    cursor: pointer;
+    transition: all 0.3s;
+    &--sedans {
+      color: base.$bright-orange;
+      &:hover {
+        background-color: base.$bright-orange;
+        color: base.$very-light-gray;
+      }
+    }
+    &--suv {
+      color: base.$dark-cyan;
+      &:hover {
+        background-color: base.$dark-cyan;
+        color: base.$very-light-gray;
+      }
+    }
+    &--luxury {
+      color: base.$very-dark-cyan;
+      &:hover {
+        background-color: base.$very-dark-cyan;
+        color: base.$very-light-gray;
+      }
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-wrapper {
+    display: flex;
+  }
+}
