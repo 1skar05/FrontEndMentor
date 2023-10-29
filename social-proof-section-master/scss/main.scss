@@ -130,13 +130,19 @@ body {
     grid-template-areas:
       "hero rating"
       "testimonial testimonial";
+    gap: unset;
+    row-gap: 60px;
   }
   .hero {
     max-width: 415px;
     text-align: left;
     align-items: normal;
     &-title {
-      max-width: 50%;
+      font-size: 3rem;
+    }
+    &-text {
+      max-width: none;
+      font-size: 17px;
     }
   }
   .rating-wrapper {
@@ -146,22 +152,23 @@ body {
     max-width: 443px;
     display: flex;
     justify-content: space-around;
-    &:nth-child(2) {
-      margin-left: 45px;
+    &:nth-child(1) {
+      margin-right: 110px;
     }
     &:nth-child(3) {
-      margin-left: 90px;
+      margin-left: 110px;
     }
   }
   .testimonial {
     flex-direction: row;
+    gap: 30px;
   }
   .card {
     &:nth-child(2) {
-      margin-top: 15px;
+      margin-top: 30px;
     }
     &:nth-child(3) {
-      margin-top: 30px;
+      margin-top: 60px;
     }
   }
 }
