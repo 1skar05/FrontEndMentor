@@ -170,5 +170,8 @@ body {
     &:nth-child(3) {
       margin-top: 60px;
     }
+    &__text {
+      width: 100%;
+    }
   }
 }

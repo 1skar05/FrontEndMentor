@@ -171,4 +171,7 @@ body {
   .card:nth-child(3) {
     margin-top: 60px;
   }
+  .card__text {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
