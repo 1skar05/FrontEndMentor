@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+  background-color: #fff;
+  padding: 0 35px;
+}
+
+.card {
+  width: 327px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card__image img {
+  width: 100%;
+  height: 203px;
+  display: block;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.card__content {
+  padding: 1.25rem 0;
+}
+.card__content-title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px 0;
+  color: hsl(217, 19%, 35%);
+}
+.card__content-description {
+  font-weight: 500;
+  color: hsl(214, 17%, 51%);
+}
+.card__author {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  align-items: center;
+}
+.card__author-info {
+  display: flex;
+  gap: 1rem;
+}
+.card__author-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.card__author-name {
+  font-size: 13px;
+  color: hsl(217, 19%, 35%);
+}
+.card__author-date {
+  color: hsl(214, 17%, 51%);
+  font-weight: 500;
+}
+.card__author-btn {
+  align-self: end;
+  width: 2rem;
+  height: 2rem;
+  background-color: hsl(210, 46%, 95%);
+  border: none;
+  border-radius: 50%;
+  z-index: 2;
+}
+.card__author-btn:hover {
+  background-color: hsl(217, 19%, 35%);
+  cursor: pointer;
+}
+.card__author-btn:hover img {
+  filter: brightness(0) invert(1);
+}
+.card__tooltip {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  opacity: 0;
+  background-color: hsl(217, 19%, 35%);
+  width: 100%;
+  padding: 1.25rem 2.1875rem;
+}
+.card__tooltip h3 {
+  font-size: 13px;
+  color: hsl(210, 46%, 95%);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.card__tooltip ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.card__tooltip ul li {
+  list-style: none;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,112 @@
+@use "base";
+
+// mobile
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: base.$light-grayish-blue;
+}
+.container {
+  background-color: #fff;
+  padding: 0 35px;
+}
+.card {
+  width: 327px;
+  // height: 513px;
+  position: relative;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+  &__image {
+    img {
+      width: 100%;
+      height: 203px;
+      display: block;
+      object-fit: fill;
+    }
+  }
+  &__content {
+    padding: 1.25rem 0;
+
+    &-title {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 10px 0;
+      color: base.$very-dark-grayish-blue;
+    }
+    &-description {
+      font-weight: 500;
+      color: base.$desaturated-dark-blue;
+    }
+  }
+  &__author {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+    align-items: center;
+    &-info {
+      display: flex;
+      gap: 1rem;
+    }
+
+    &-avatar {
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 50%;
+    }
+    &-name {
+      font-size: 13px;
+      color: base.$very-dark-grayish-blue;
+    }
+    &-date {
+      color: base.$desaturated-dark-blue;
+      font-weight: 500;
+    }
+    &-btn {
+      align-self: end;
+      width: 2rem;
+      height: 2rem;
+      background-color: base.$light-grayish-blue;
+      border: none;
+      border-radius: 50%;
+      z-index: 2;
+
+      &:hover {
+        background-color: base.$very-dark-grayish-blue;
+        cursor: pointer;
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+  }
+  &__tooltip {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    background-color: base.$very-dark-grayish-blue;
+    width: 100%;
+    padding: 1.25rem 2.1875rem;
+    h3 {
+      font-size: 13px;
+      color: base.$light-grayish-blue;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      li {
+        list-style: none;
+      }
+    }
+  }
+}
