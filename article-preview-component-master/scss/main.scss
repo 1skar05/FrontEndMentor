@@ -14,7 +14,6 @@ body {
 }
 .card {
   width: 327px;
-  // height: 513px;
   position: relative;
 
   border-radius: 10px;
@@ -73,26 +72,30 @@ body {
       border: none;
       border-radius: 50%;
       z-index: 2;
+      transition: 0.4s all;
 
-      &:hover {
-        background-color: base.$very-dark-grayish-blue;
+      &.active {
+        background-color: base.$desaturated-dark-blue;
         cursor: pointer;
+        transition: 0.4s all;
         img {
-          filter: brightness(0) invert(1);
+          @include base.icon-active();
         }
       }
     }
   }
   &__tooltip {
+    padding: 0 1.25rem;
     position: absolute;
-    bottom: 0;
+    bottom: -100px;
     display: flex;
     align-items: center;
-    gap: 1rem;
     opacity: 0;
+    gap: 1rem;
     background-color: base.$very-dark-grayish-blue;
     width: 100%;
     padding: 1.25rem 2.1875rem;
+    transition: 0.35s all ease-out;
     h3 {
       font-size: 13px;
       color: base.$light-grayish-blue;
@@ -107,6 +110,35 @@ body {
       li {
         list-style: none;
       }
+    }
+    &.active {
+      bottom: 0;
+      opacity: 1;
+      transition: 0.35s all ease-out;
+    }
+  }
+}
+
+// tablet
+
+@media only screen and (min-width: 600px) {
+  .container {
+    padding: 0 25px;
+  }
+  .card {
+    width: 570px;
+    display: flex;
+    flex-direction: row;
+    &__image {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    &__tooltip {
+      width: 363.62px;
+      right: 0;
     }
   }
 }

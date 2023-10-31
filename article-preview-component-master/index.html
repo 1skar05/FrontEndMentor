@@ -52,19 +52,23 @@
               <p class="card__author-date">28 Jun 2020</p>
             </div>
           </div>
-          <button class="card__author-btn">
+          <button class="card__author-btn" id="btn-share">
             <img src="./images/icon-share.svg" alt="share-icon" />
           </button>
 
         </div>
       </div>
-      <div class="card__tooltip container">
+      <div class="card__tooltip" id="tooltip">
         <h3>share</h3>
         <ul>
-          <li><img src="./images/icon-facebook.svg" alt=""></li>
-          <li><img src="./images/icon-twitter.svg" alt=""></li>
-          <li><img src="./images/icon-pinterest.svg" alt=""></li>
+          <li><a href="https://www.facebook.com/"  class="card__tooltip-link"><img src="./images/icon-facebook.svg" alt="icon-facebook"></a></li>
+          <li><a href="https://twitter.com/" target="_blank" class="card__tooltip-link"><img src="./images/icon-twitter.svg" alt="icon-twitter"></a></li>
+          <li><a href="https://www.pinterest.com/" target="_blank" class="card__tooltip-link"><img src="./images/icon-pinterest.svg" alt="icon-pinterest"></a></li>
       </div>
     </div>
+
+
+    <!-- script -->
+    <script src="index.js"></script>
   </body>
 </html>
