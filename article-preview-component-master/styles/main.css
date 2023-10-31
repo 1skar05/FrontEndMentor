@@ -1,4 +1,6 @@
-* {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -19,6 +21,7 @@ body {
   justify-content: center;
   align-items: center;
   background-color: hsl(210, 46%, 95%);
+  line-height: 1.5;
 }
 
 .container {
@@ -29,7 +32,10 @@ body {
 .card {
   width: 327px;
   position: relative;
+}
+.card__wrapper {
   border-radius: 10px;
+  width: 100%;
   overflow: hidden;
 }
 .card__image img {
@@ -94,7 +100,6 @@ body {
   filter: brightness(0) invert(1);
 }
 .card__tooltip {
-  padding: 0 1.25rem;
   position: absolute;
   bottom: -100px;
   display: flex;
@@ -108,7 +113,7 @@ body {
 }
 .card__tooltip h3 {
   font-size: 13px;
-  color: hsl(210, 46%, 95%);
+  color: hsl(212, 23%, 69%);
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -120,6 +125,12 @@ body {
 }
 .card__tooltip ul li {
   list-style: none;
+}
+.card__tooltip ul li img {
+  display: block;
+}
+.card__tooltip ul li:hover img {
+  transform: scale(1.1);
 }
 .card__tooltip.active {
   bottom: 0;
@@ -133,6 +144,8 @@ body {
   }
   .card {
     width: 570px;
+  }
+  .card__wrapper {
     display: flex;
     flex-direction: row;
   }
@@ -140,8 +153,63 @@ body {
     width: 100%;
     height: 100%;
   }
+  .card__content-title {
+    font-size: 20px;
+  }
   .card__tooltip {
     width: 363.62px;
     right: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 2rem 2.5rem;
+  }
+  .card {
+    width: 732px;
+    position: relative;
+  }
+  .card__image img {
+    width: 285px;
+    -o-object-position: left;
+       object-position: left;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .card__content {
+    padding-top: 0;
+  }
+  .card__content-title {
+    margin-top: 0;
+    margin-bottom: 12px;
+  }
+  .card__author {
+    padding-bottom: 0;
+  }
+  .card__tooltip {
+    gap: 1.25rem;
+    padding: 1rem 2.25rem;
+    position: absolute;
+    bottom: unset;
+    right: unset;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    top: 48%;
+    left: 75%;
+  }
+  .card__tooltip::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 0.85rem solid transparent;
+    border-right: 0.85rem solid transparent;
+    border-top: 0.85rem solid hsl(217, 19%, 35%);
+    transition: 0.4s all;
+  }
+  .card__tooltip.active {
+    bottom: unset;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -12,7 +12,9 @@ $light-grayish-blue: hsl(210, 46%, 95%);
 
 // Standardlize
 
-* {
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
