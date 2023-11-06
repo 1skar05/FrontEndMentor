@@ -118,6 +118,9 @@ body {
     gap: 1.875rem;
     grid-template-columns: repeat(3, 1fr);
   }
+  .card__title {
+    font-size: 1.25rem;
+  }
   .card.supervisor {
     transform: translateY(50%);
   }

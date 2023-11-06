@@ -108,6 +108,9 @@
       gap: 1.875rem;
       grid-template-columns: repeat(3, 1fr);
     }
+    &__title {
+      font-size: 1.25rem;
+    }
     &.supervisor {
       transform: translateY(50%);
     }
