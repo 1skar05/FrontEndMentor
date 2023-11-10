@@ -1,0 +1,182 @@
+@use "base";
+
+.container {
+  padding: 1.875rem;
+}
+
+[aria-invalid="true"] {
+  outline: 2px solid base.$soft-red;
+  outline-offset: -2px;
+  background-image: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right 4.5rem center;
+  background-size: 1.25rem;
+}
+
+.hero {
+  &__image {
+    picture,
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+  &__content {
+    margin-top: 55px;
+  }
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    font-weight: 600;
+    color: base.$dark-grayish-red;
+    &--highlight {
+      color: base.$desaturated-red;
+      font-weight: 300;
+    }
+  }
+  &__description {
+    text-align: center;
+    color: base.$desaturated-red;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  &__form {
+    position: relative;
+    width: 100%;
+
+    button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 0.7rem 1.66rem;
+      border-radius: 2rem;
+      border: none;
+      background: base.$gradient2;
+      cursor: pointer;
+
+      img {
+        width: 12px;
+        height: 20px;
+        aspect-ratio: 12/20;
+        object-fit: contain;
+      }
+
+      &:hover {
+        background: base.$gradient2;
+        box-shadow: 0 0 0.5rem base.$gradient1;
+        &::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: base.$gradient1;
+          opacity: 0.55;
+          border-radius: 2rem;
+        }
+      }
+    }
+  }
+  &__email {
+    border: none;
+    width: 100%;
+    padding: 0.95rem 1.5rem;
+    border-radius: 1.75rem;
+    outline: 1px solid base.$desaturated-red;
+    outline-offset: -1px;
+    &::placeholder {
+      color: base.$desaturated-red;
+    }
+  }
+}
+.error {
+  position: absolute;
+  left: 8%;
+  color: base.$soft-red;
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  text-align: center;
+  visibility: hidden;
+  &.active {
+    visibility: visible;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  [aria-invalid="true"] {
+    outline: 2px solid base.$soft-red;
+    background-position: right 7.25rem center;
+  }
+
+  .container {
+    padding: 0;
+    padding-left: 10.3125rem;
+  }
+  .hero {
+    background-image: url("../images/bg-pattern-desktop.svg"), base.$gradient1;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    grid-template-areas:
+      "brand image"
+      "content image";
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 10.17625rem 1fr;
+    grid-gap: 4.5rem;
+    min-height: 100vh;
+    &__brand {
+      grid-area: brand;
+      align-self: center;
+      font-size: 0;
+    }
+    &__image {
+      display: flex;
+      grid-area: image;
+
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &__content {
+      margin-top: 0;
+      grid-area: content;
+      &-inner {
+        max-width: 27.8125rem;
+      }
+    }
+    &__title {
+      font-size: 4rem;
+      text-align: left;
+      line-height: 1.15;
+      letter-spacing: 0.27em;
+    }
+    &__description {
+      text-align: left;
+      line-height: 1.75;
+      margin-top: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    &__form {
+      input {
+        padding: 1rem 2rem;
+        line-height: 1.75;
+      }
+      button {
+        padding: 1.125rem 2.75rem;
+        img {
+          width: 0.75rem;
+          height: 1.25rem;
+          max-width: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}
