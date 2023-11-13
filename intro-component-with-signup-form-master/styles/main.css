@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 1rem;
+  background: url("../images/bg-intro-mobile.png"), hsl(0, 100%, 74%);
+}
+
+.signup {
+  margin-top: 5.5rem;
+  display: grid;
+  gap: 4rem;
+}
+.signup__header {
+  text-align: center;
+  color: white;
+}
+.signup__header__title {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 1.75rem;
+}
+.signup__header__text {
+  line-height: 1.55;
+  padding: 0 1rem;
+}
+.signup__main__trial {
+  background-color: hsl(248, 32%, 49%);
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+  margin-bottom: 1.25rem;
+  color: white;
+  text-align: center;
+  padding: 1.25rem 4rem;
+  border-radius: 0.625rem;
+  font-weight: 400;
+}
+.signup__main__trial--highlight {
+  font-weight: 700;
+}
+.signup__main__form {
+  background-color: white;
+  border-radius: 0.625rem;
+  padding: 1.5rem;
+  margin-bottom: 5.5rem;
+  text-align: center;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+.signup__main__form__submit {
+  background-color: hsl(154, 59%, 51%);
+  box-shadow: 0px 4px 0px 0px hsl(154, 84.86%, 39.27%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-radius: 0.3125rem;
+  padding: 0.75rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.signup__main__form__submit:hover {
+  opacity: 0.8;
+}
+.signup__main__form__text {
+  margin-top: 1rem;
+  padding: 0 0.625rem;
+  line-height: 2;
+  color: hsl(246, 25%, 77%);
+  font-size: 0.75rem;
+}
+.signup__main__form__text--highlight {
+  text-decoration: none;
+  font-weight: 700;
+  color: hsl(0, 100%, 74%);
+}
+.signup__main__input {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  border: 1px solid hsl(246, 25%, 77%);
+  border-radius: 0.3125rem;
+  padding: 1rem;
+  margin-bottom: 0.625rem;
+}
+.signup__main__input::-moz-placeholder {
+  color: hsl(249, 10%, 26%);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+.signup__main__input::placeholder {
+  color: hsl(249, 10%, 26%);
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+.signup__main__input:focus {
+  outline: none;
+  border: 1px solid hsl(248, 32%, 49%);
+}
+.signup__main__input--invalid {
+  border: 1px solid red;
+}/*# sourceMappingURL=main.css.map */

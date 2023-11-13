@@ -1,0 +1,6 @@
+@mixin main-shadow {
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+}
+@mixin button-shadow {
+  box-shadow: 0px 4px 0px 0px hsl(154deg 84.86% 39.27%);
+}
