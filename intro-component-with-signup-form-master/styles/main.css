@@ -63,7 +63,7 @@ body {
   font-family: "Poppins", sans-serif;
   border: none;
   border-radius: 0.3125rem;
-  padding: 0.75rem;
+  padding: 0.9375rem;
   width: 100%;
   font-size: 1rem;
   font-weight: 400;
@@ -87,12 +87,13 @@ body {
   color: hsl(0, 100%, 74%);
 }
 .signup__main__input {
+  margin-bottom: 0.625rem;
+  position: relative;
   font-family: "Poppins", sans-serif;
   width: 100%;
   border: 1px solid hsl(246, 25%, 77%);
   border-radius: 0.3125rem;
   padding: 1rem;
-  margin-bottom: 0.625rem;
 }
 .signup__main__input::-moz-placeholder {
   color: hsl(249, 10%, 26%);
@@ -109,5 +110,64 @@ body {
   border: 1px solid hsl(248, 32%, 49%);
 }
 .signup__main__input--invalid {
-  border: 1px solid red;
+  border: 2px solid hsl(0, 100%, 74%);
+  background-image: url("../images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+.signup__main__input-error {
+  display: none;
+  text-align: right;
+  position: relative;
+  top: -0.875rem;
+  z-index: 1;
+  font-size: 0.625rem;
+  color: hsl(0, 100%, 74%);
+  font-style: italic;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    background: url("../images/bg-intro-desktop.png"), hsl(0, 100%, 74%);
+    margin: 0;
+  }
+  .signup {
+    margin-top: 0;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-template-areas: "header main" "header main";
+  }
+  .signup__header {
+    grid-area: header;
+    grid-row: 1/span 4;
+    text-align: left;
+    max-width: 500px;
+  }
+  .signup__header__title {
+    font-size: 3.1rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  .signup__header__text {
+    padding: 0;
+  }
+  .signup__main {
+    max-width: 540px;
+    grid-area: main;
+    grid-row: 2/span 2;
+  }
+  .signup__main__form {
+    padding: 2.5rem;
+    margin-bottom: 0;
+  }
+  .signup__main__input {
+    margin-bottom: 1.25rem;
+    padding: 1.1rem 1.5rem;
+  }
+  .signup__main__input-error {
+    font-size: 0.75rem;
+  }
 }/*# sourceMappingURL=main.css.map */

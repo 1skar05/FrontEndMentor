@@ -53,7 +53,7 @@ body {
         font-family: "Poppins", sans-serif;
         border: none;
         border-radius: 0.3125rem;
-        padding: 0.75rem;
+        padding: 0.9375rem;
         width: 100%;
 
         font-size: 1rem;
@@ -79,12 +79,15 @@ body {
       }
     }
     &__input {
+      margin-bottom: 0.625rem;
+      position: relative;
+
       font-family: "Poppins", sans-serif;
       width: 100%;
       border: 1px solid hsl(246, 25%, 77%);
       border-radius: 0.3125rem;
       padding: 1rem;
-      margin-bottom: 0.625rem;
+
       &::placeholder {
         color: base.$dark-blue;
         font-weight: 500;
@@ -95,7 +98,73 @@ body {
         border: 1px solid base.$blue;
       }
       &--invalid {
-        border: 1px solid red;
+        border: 2px solid base.$red;
+        background-image: url("../images/icon-error.svg");
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+      }
+      &-error {
+        display: none;
+        text-align: right;
+        position: relative;
+
+        top: -0.875rem;
+        z-index: 1;
+
+        font-size: 0.625rem;
+        color: base.$red;
+
+        font-style: italic;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+// Desktop
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    background: url("../images/bg-intro-desktop.png"), base.$red;
+    margin: 0;
+  }
+  .signup {
+    margin-top: 0;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-template-areas:
+      "header main"
+      "header main";
+    &__header {
+      grid-area: header;
+      grid-row: 1 / span 4;
+      text-align: left;
+      max-width: 500px;
+      &__title {
+        font-size: 3.1rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+      }
+      &__text {
+        padding: 0;
+      }
+    }
+    &__main {
+      max-width: 540px;
+      grid-area: main;
+      grid-row: 2 / span 2;
+      &__form {
+        padding: 2.5rem;
+        margin-bottom: 0;
+      }
+      &__input {
+        margin-bottom: 1.25rem;
+
+        padding: 1.1rem 1.5rem;
+        &-error {
+          font-size: 0.75rem;
+        }
       }
     }
   }

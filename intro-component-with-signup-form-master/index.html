@@ -37,35 +37,43 @@
           <span class="signup__main__trial--highlight">Try it free 7 days</span>
           then $20/mo. thereafter
         </div>
-        <div class="signup__main__form">
+        <form class="signup__main__form">
           <input
             type="text"
             placeholder="First Name"
             id="fname"
-            name="fname"
+            name="First Name"
             class="signup__main__input"
           />
+          <label for="First Name" class="signup__main__input-error"> </label>
+
           <input
             type="text"
-            name="lname"
+            name="Last Name"
             id="lname"
             placeholder="Last Name"
             class="signup__main__input"
           />
+          <label for="Last Name" class="signup__main__input-error"></label>
+
           <input
             type="email"
-            name="email"
+            name="Email"
             id="email"
             placeholder="Email Address"
             class="signup__main__input"
           />
+          <label for="Email" class="signup__main__input-error"></label>
+
           <input
             type="password"
-            name="password"
+            name="Password"
             id="password"
             placeholder="Password"
             class="signup__main__input"
           />
+          <label for="Password" class="signup__main__input-error"></label>
+
           <button class="signup__main__form__submit">
             Claim your free trial
           </button>
@@ -75,8 +83,10 @@
               >Terms and Services</a
             >
           </p>
-        </div>
+        </form>
       </div>
     </main>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>
