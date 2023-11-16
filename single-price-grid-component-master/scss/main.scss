@@ -129,6 +129,11 @@ body {
     }
     &__subscription {
       grid-area: subscription;
+      &__details {
+        margin: 0;
+        margin-top: 1.25rem;
+        margin-bottom: 2rem;
+      }
     }
     &__why-us {
       grid-area: why-us;
