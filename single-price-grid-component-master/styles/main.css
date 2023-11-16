@@ -1,0 +1,108 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: hsl(204, 43%, 93%);
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  margin: 2rem;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+}
+
+.card {
+  padding: 1.5625rem;
+}
+.card__community {
+  background-color: white;
+}
+.card__community__title {
+  margin-top: 0.3125rem;
+  color: hsl(179, 62%, 43%);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card__community__subtitle {
+  color: hsl(71, 73%, 54%);
+  font-size: 0.875rem;
+  margin: 1.5625rem 0;
+}
+.card__community__description {
+  color: hsl(218, 22%, 67%);
+  font-size: 0.825rem;
+  line-height: 2;
+  margin-bottom: 0.625rem;
+}
+.card__subscription {
+  background-color: hsl(179, 62%, 43%);
+}
+.card__subscription__title {
+  color: hsl(204, 43%, 93%);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card__subscription__details {
+  color: hsl(204, 43%, 93%);
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 1.5625rem 0;
+}
+.card__subscription__price-box {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+.card__subscription__price {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.card__subscription__duration {
+  font-size: 0.875rem;
+  color: hsl(181, 60%, 68%);
+}
+.card__subscription__price-text {
+  display: inline-block;
+}
+.card__subscription__cta {
+  width: 100%;
+  padding: 0.9375rem;
+  background-color: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 0.3125rem;
+  color: white;
+  font-family: "Karla", sans-serif;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+.card__subscription__cta:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.card__why-us {
+  background-color: hsl(179, 47%, 52%);
+}
+.card__why-us__title {
+  color: hsl(204, 43%, 93%);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.card__why-us__list {
+  color: hsl(204, 43%, 93%);
+  font-size: 0.825rem;
+  line-height: 1.5;
+  margin-top: 1.5625rem;
+  list-style: none;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,24 @@
+// Colors
+$cyan: hsl(179, 62%, 43%);
+$light-cyan: hsl(179, 47%, 52%);
+$cyan-text: hsl(181, 60%, 68%);
+$bright-yellow: hsl(71, 73%, 54%);
+
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+
+// Font
+$karla: "Karla", sans-serif;
+
+// Standardlize
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}

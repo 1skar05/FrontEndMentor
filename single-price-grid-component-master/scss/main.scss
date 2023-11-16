@@ -1,0 +1,94 @@
+@use "base";
+@use "mixins";
+body {
+  background: base.$light-gray;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  margin: 2rem;
+  border-radius: 0.3125rem;
+  overflow: hidden;
+}
+.card {
+  padding: 1.5625rem;
+  &__community {
+    background-color: white;
+    &__title {
+      margin-top: 0.3125rem;
+      color: base.$cyan;
+      @include mixins.heading;
+    }
+    &__subtitle {
+      color: base.$bright-yellow;
+      font-size: 0.875rem;
+      margin: 1.5625rem 0;
+    }
+    &__description {
+      color: base.$grayish-blue;
+      font-size: 0.825rem;
+      line-height: 2;
+      margin-bottom: 0.625rem;
+    }
+  }
+  &__subscription {
+    background-color: base.$cyan;
+    &__title {
+      color: base.$light-gray;
+      @include mixins.heading;
+    }
+    &__details {
+      color: base.$light-gray;
+      font-size: 1rem;
+      line-height: 1.5;
+      margin: 1.5625rem 0;
+    }
+    &__price-box {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+    }
+    &__price {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    &__duration {
+      font-size: 0.875rem;
+      color: base.$cyan-text;
+    }
+    &__price-text {
+      display: inline-block;
+    }
+
+    &__cta {
+      width: 100%;
+      padding: 0.9375rem;
+      background-color: base.$bright-yellow;
+      border: none;
+      border-radius: 0.3125rem;
+      color: white;
+      font-family: base.$karla;
+      font-size: 1rem;
+      transition: 0.3s;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+        transition: 0.3s;
+      }
+    }
+  }
+  &__why-us {
+    background-color: base.$light-cyan;
+    &__title {
+      color: base.$light-gray;
+      @include mixins.heading;
+    }
+    &__list {
+      color: base.$light-gray;
+      font-size: 0.825rem;
+      line-height: 1.5;
+      margin-top: 1.5625rem;
+      list-style: none;
+    }
+  }
+}
