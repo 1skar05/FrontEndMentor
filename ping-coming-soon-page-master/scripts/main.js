@@ -22,3 +22,9 @@ cta.addEventListener("click", (e) => {
     error.innerHTML = "";
   }
 });
+input.addEventListener("keyup", (e) => {
+  if (input.value !== "") {
+    error.classList.remove("notify__error--show");
+    input.classList.remove("error");
+  }
+});
