@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  margin: 2rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.375rem;
+  margin-bottom: 3rem;
+}
+.logo img {
+  width: 4rem;
+}
+
+.header {
+  font-family: "Libre Franklin", sans-serif;
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.header__title {
+  font-size: 1.7rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+  margin-bottom: 1.25rem;
+}
+.header__title--highlight {
+  font-size: 1.7rem;
+  color: hsl(209, 33%, 12%);
+  font-weight: 700;
+}
+.header__description {
+  font-family: "Libre Franklin", sans-serif;
+  color: hsl(209, 33%, 12%);
+  font-size: 0.9rem;
+}
+
+.notify {
+  display: flex;
+  flex-direction: column;
+}
+.notify__input {
+  padding: 1rem;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 3rem;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+  color: hsl(209, 33%, 12%);
+}
+.notify__input::-moz-placeholder {
+  color: hsl(209, 33%, 12%);
+  opacity: 0.5;
+  padding-left: 1rem;
+}
+.notify__input::placeholder {
+  color: hsl(209, 33%, 12%);
+  opacity: 0.5;
+  padding-left: 1rem;
+}
+.notify__input.error {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+.notify__error {
+  display: none;
+  text-align: center;
+  color: hsl(354, 100%, 66%);
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+  font-size: 0.75rem;
+  margin: 0.5rem 0;
+}
+.notify__error--show {
+  display: block;
+}
+.notify__cta {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  border-radius: 3rem;
+  border: none;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+}
+.notify__cta:hover {
+  opacity: 0.8;
+}
+
+.illustrate {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+.illustrate img {
+  width: 100%;
+}
+
+.social {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+.social li {
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(223, 87%, 63%);
+  cursor: pointer;
+}
+.social li:hover {
+  border: 1px solid hsl(223, 87%, 63%);
+  color: hsl(209, 33%, 12%);
+  transition: 0.3s;
+}
+
+.footer {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  font-size: 0.825rem;
+  margin-top: 2rem;
+}/*# sourceMappingURL=main.css.map */

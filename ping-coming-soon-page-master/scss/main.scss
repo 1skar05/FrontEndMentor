@@ -1,0 +1,127 @@
+@use "base";
+
+.container {
+  margin: 2rem;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.375rem;
+  margin-bottom: 3rem;
+  img {
+    width: 4rem;
+  }
+}
+
+.header {
+  font-family: base.$libre;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  &__title {
+    font-size: 1.7rem;
+    color: base.$gray;
+    font-weight: 300;
+    margin-bottom: 1.25rem;
+    &--highlight {
+      font-size: 1.7rem;
+      color: base.$very-dark-blue;
+      font-weight: 700;
+    }
+  }
+  &__description {
+    font-family: base.$libre;
+
+    color: base.$very-dark-blue;
+    font-size: 0.9rem;
+  }
+}
+.notify {
+  display: flex;
+  flex-direction: column;
+  &__input {
+    padding: 1rem;
+    border: 1px solid base.$pale-blue;
+    border-radius: 3rem;
+    font-family: base.$libre;
+    font-weight: 300;
+    font-size: 0.9rem;
+    color: base.$very-dark-blue;
+
+    &::placeholder {
+      color: base.$very-dark-blue;
+      opacity: 0.5;
+      padding-left: 1rem;
+    }
+    &.error {
+      border: 1px solid base.$light-red;
+    }
+  }
+
+  &__error {
+    display: none;
+
+    text-align: center;
+    color: base.$light-red;
+    font-family: base.$libre;
+    font-weight: 300;
+    font-size: 0.75rem;
+    margin: 0.5rem 0;
+
+    &--show {
+      display: block;
+    }
+  }
+  &__cta {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: base.$blue;
+    color: white;
+    border-radius: 3rem;
+    border: none;
+    font-family: base.$libre;
+    font-weight: 600;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+.illustrate {
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+  img {
+    width: 100%;
+  }
+}
+
+.social {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 3rem;
+  li {
+    border: 1px solid base.$pale-blue;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: base.$blue;
+    cursor: pointer;
+    &:hover {
+      border: 1px solid base.$blue;
+      color: base.$very-dark-blue;
+      transition: 0.3s;
+    }
+  }
+}
+.footer {
+  text-align: center;
+  font-family: base.$libre;
+  font-weight: 300;
+  color: base.$gray;
+  font-size: 0.825rem;
+  margin-top: 2rem;
+}
