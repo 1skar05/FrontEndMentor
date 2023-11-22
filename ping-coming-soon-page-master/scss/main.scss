@@ -39,7 +39,7 @@
   display: flex;
   flex-direction: column;
   &__input {
-    padding: 1rem;
+    padding: 1rem 2rem;
     border: 1px solid base.$pale-blue;
     border-radius: 3rem;
     font-family: base.$libre;
@@ -50,7 +50,6 @@
     &::placeholder {
       color: base.$very-dark-blue;
       opacity: 0.5;
-      padding-left: 1rem;
     }
     &.error {
       border: 1px solid base.$light-red;
@@ -112,7 +111,8 @@
     cursor: pointer;
     &:hover {
       border: 1px solid base.$blue;
-      color: base.$very-dark-blue;
+      background-color: base.$blue;
+      color: white;
       transition: 0.3s;
     }
   }
@@ -124,4 +124,52 @@
   color: base.$gray;
   font-size: 0.825rem;
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    max-width: 768px;
+    height: 100%;
+  }
+  .logo {
+    img {
+      width: 6.25rem;
+    }
+  }
+  .header {
+    &__title {
+      font-size: 2.5rem;
+      &--highlight {
+        font-size: 2.5rem;
+      }
+    }
+    &__description {
+      font-size: 1rem;
+    }
+  }
+  .notify {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    &__input {
+      width: 560px;
+    }
+    &__cta {
+      margin-top: 0;
+      width: 25%;
+    }
+    &__error {
+      position: absolute;
+      bottom: -1.75rem;
+      padding-left: 2rem;
+    }
+  }
+  .illustrate {
+    margin-top: 5rem;
+  }
 }

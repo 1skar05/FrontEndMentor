@@ -52,7 +52,7 @@ body {
   flex-direction: column;
 }
 .notify__input {
-  padding: 1rem;
+  padding: 1rem 2rem;
   border: 1px solid hsl(223, 100%, 88%);
   border-radius: 3rem;
   font-family: "Libre Franklin", sans-serif;
@@ -63,12 +63,10 @@ body {
 .notify__input::-moz-placeholder {
   color: hsl(209, 33%, 12%);
   opacity: 0.5;
-  padding-left: 1rem;
 }
 .notify__input::placeholder {
   color: hsl(209, 33%, 12%);
   opacity: 0.5;
-  padding-left: 1rem;
 }
 .notify__input.error {
   border: 1px solid hsl(354, 100%, 66%);
@@ -128,7 +126,8 @@ body {
 }
 .social li:hover {
   border: 1px solid hsl(223, 87%, 63%);
-  color: hsl(209, 33%, 12%);
+  background-color: hsl(223, 87%, 63%);
+  color: white;
   transition: 0.3s;
 }
 
@@ -139,4 +138,48 @@ body {
   color: hsl(0, 0%, 59%);
   font-size: 0.825rem;
   margin-top: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    max-width: 768px;
+    height: 100%;
+  }
+  .logo img {
+    width: 6.25rem;
+  }
+  .header__title {
+    font-size: 2.5rem;
+  }
+  .header__title--highlight {
+    font-size: 2.5rem;
+  }
+  .header__description {
+    font-size: 1rem;
+  }
+  .notify {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+  .notify__input {
+    width: 560px;
+  }
+  .notify__cta {
+    margin-top: 0;
+    width: 25%;
+  }
+  .notify__error {
+    position: absolute;
+    bottom: -1.75rem;
+    padding-left: 2rem;
+  }
+  .illustrate {
+    margin-top: 5rem;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -40,15 +40,16 @@
         </h1>
         <p class="header__description">Subscribe and get notified</p>
       </div>
-      <div class="notify">
+      <form class="notify">
         <input
+          id="email"
           class="notify__input"
           type="email"
           placeholder="Your email address..."
         />
-        <p class="notify__error">Please provide a valid email address</p>
-        <button class="notify__cta">Notify Me</button>
-      </div>
+        <p class="notify__error"></p>
+        <button class="notify__cta" type="submit">Notify Me</button>
+      </form>
       <div class="illustrate">
         <img src="./images/illustration-dashboard.png" alt="dashboard" />
       </div>
@@ -61,5 +62,7 @@
         &copy; Copyright Ping. All rights reserved.
       </footer>
     </main>
+
+    <script src="scripts/main.js"></script>
   </body>
 </html>
