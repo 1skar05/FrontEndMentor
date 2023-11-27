@@ -1,0 +1,21 @@
+// colors
+$violet: hsl(257, 40%, 49%);
+$soft-magenta: hsl(300, 69%, 71%);
+
+// fonts
+$font-primary: "Poppins", sans-serif;
+$font-secondary: "Open Sans", sans-serif;
+
+// resets
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
