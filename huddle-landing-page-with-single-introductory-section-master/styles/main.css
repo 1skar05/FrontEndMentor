@@ -44,7 +44,7 @@ body {
   color: white;
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   line-height: 1.5;
   text-wrap: pretty;
 }
@@ -53,10 +53,10 @@ body {
   color: hsl(257, 40%, 49%);
   border: none;
   border-radius: 3rem;
-  padding: 0.5rem 4rem;
+  padding: 0.8rem 4.5rem;
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 0.8rem;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -74,21 +74,21 @@ body {
   display: flex;
   list-style-type: none;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.625rem;
 }
 .footer ul li {
   cursor: pointer;
   border: 1px solid white;
   border-radius: 50%;
   padding: 0.5rem;
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2rem;
+  height: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .footer ul li i {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
 }
 .footer ul li:hover {
