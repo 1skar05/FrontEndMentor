@@ -180,4 +180,79 @@ body {
 .article .card__content__text {
   color: hsl(236, 13%, 42%);
   line-height: 1.5;
+}
+
+@media only screen and (min-width: 768px) {
+  #open,
+  #close {
+    display: none;
+  }
+  .container {
+    margin: 4.625rem 8rem;
+    padding: 0;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas: "header header" "main sidebar" "article article";
+  }
+  .header {
+    grid-area: header;
+    margin: 1rem 0;
+  }
+  .header__nav {
+    position: unset;
+    height: unset;
+    display: block;
+    width: unset;
+    background: none;
+  }
+  .header__nav__content {
+    width: unset;
+    float: unset;
+  }
+  .header__nav__list {
+    flex-direction: row;
+    margin-top: 0;
+    justify-content: space-between;
+  }
+  .header__nav__list li {
+    padding: 0;
+  }
+  .header__nav__list li a {
+    color: hsl(236, 13%, 42%);
+  }
+  .main {
+    grid-area: main;
+  }
+  .main__news {
+    display: flex;
+    gap: 2rem;
+  }
+  .main__news__title {
+    flex: 1;
+    font-size: 3.5rem;
+    margin-bottom: 0;
+  }
+  .main__news__content {
+    flex: 1;
+  }
+  .main__news__content__text {
+    font-size: 1rem;
+    max-width: 360px;
+    margin-bottom: 1.5rem;
+  }
+  .main__news__content__button {
+    padding: 1rem 2.5rem;
+    margin-top: 2rem;
+  }
+  .sidebar {
+    grid-area: sidebar;
+  }
+  .article {
+    grid-area: article;
+    display: flex;
+    justify-content: space-between;
+  }
+  .article .card {
+    max-width: 370px;
+  }
 }/*# sourceMappingURL=main.css.map */

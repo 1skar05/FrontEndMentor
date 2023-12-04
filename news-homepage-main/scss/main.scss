@@ -181,3 +181,83 @@
     }
   }
 }
+
+// desktop
+@media only screen and (min-width: 768px) {
+  #open,
+  #close {
+    display: none;
+  }
+
+  .container {
+    margin: 4.625rem 8rem;
+    padding: 0;
+    display: grid;
+    gap: 2rem;
+    grid-template-areas:
+      "header header"
+      "main sidebar"
+      "article article";
+  }
+  .header {
+    grid-area: header;
+    margin: 1rem 0;
+    &__nav {
+      position: unset;
+      height: unset;
+      display: block;
+      width: unset;
+      background: none;
+      &__content {
+        width: unset;
+        float: unset;
+      }
+      &__list {
+        flex-direction: row;
+        margin-top: 0;
+        justify-content: space-between;
+        li {
+          padding: 0;
+          a {
+            color: base.$dark-grayish-blue;
+          }
+        }
+      }
+    }
+  }
+  .main {
+    grid-area: main;
+    &__news {
+      display: flex;
+      gap: 2rem;
+      &__title {
+        flex: 1;
+        font-size: 3.5rem;
+        margin-bottom: 0;
+      }
+      &__content {
+        flex: 1;
+        &__text {
+          font-size: 1rem;
+          max-width: 360px;
+          margin-bottom: 1.5rem;
+        }
+        &__button {
+          padding: 1rem 2.5rem;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+  .sidebar {
+    grid-area: sidebar;
+  }
+  .article {
+    grid-area: article;
+    display: flex;
+    justify-content: space-between;
+    .card {
+      max-width: 370px;
+    }
+  }
+}
