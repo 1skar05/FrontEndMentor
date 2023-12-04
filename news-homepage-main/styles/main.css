@@ -68,6 +68,11 @@ body {
   text-decoration: none;
   color: hsl(240, 100%, 5%);
   font-weight: 400;
+  transition: 0.4s;
+}
+.header__nav__list li:hover a {
+  color: hsl(5, 85%, 63%);
+  transition: 0.4s;
 }
 
 .main {
@@ -222,22 +227,23 @@ body {
   }
   .main {
     grid-area: main;
+    margin-bottom: 2.375rem;
+  }
+  .main__hero {
+    margin-bottom: 1.5rem;
   }
   .main__news {
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
   }
   .main__news__title {
-    flex: 1;
+    max-width: 300px;
     font-size: 3.5rem;
     margin-bottom: 0;
   }
-  .main__news__content {
-    flex: 1;
-  }
   .main__news__content__text {
-    font-size: 1rem;
-    max-width: 360px;
+    font-size: 1.075rem;
+    max-width: 400px;
     margin-bottom: 1.5rem;
   }
   .main__news__content__button {
@@ -251,8 +257,10 @@ body {
     grid-area: article;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 4rem;
   }
   .article .card {
+    margin: 0;
     max-width: 370px;
   }
 }/*# sourceMappingURL=main.css.map */
