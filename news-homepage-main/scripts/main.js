@@ -9,3 +9,9 @@ openNav.addEventListener("click", (e) => {
 closeNav.addEventListener("click", () => {
   navbar.style.display = "none";
 });
+
+document.addEventListener("click", (e) => {
+  if (e.target === navbar) {
+    navbar.style.display = "none";
+  }
+});
