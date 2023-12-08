@@ -1,3 +1,19 @@
+const markAll = document.getElementsByClassName("header__right-col")[0];
+const notifyCount = document.getElementsByClassName("header__count")[0];
+
+markAll.addEventListener("click", (e) => {
+  e.preventDefault();
+  markAllAsRead();
+  updateUnreadCount();
+});
+// Update unread notifications count
+function updateUnreadCount() {
+  const unreadNotifications = document.querySelectorAll(
+    ".notification.unread"
+  ).length;
+  notifyCount.textContent = unreadNotifications;
+}
+
 // Mark all notifications as read
 function markAllAsRead() {
   // Code to mark all notifications as read goes here
