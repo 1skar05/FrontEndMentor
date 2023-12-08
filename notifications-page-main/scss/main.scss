@@ -114,11 +114,18 @@
   body {
     display: flex;
     justify-content: center;
+    background-color: base.$very-light-grayish-blue;
   }
   .container {
     max-width: 735px;
+    height: 100%;
+    background-color: base.$white;
+    border-radius: 0.625rem;
+    margin: 3.75rem;
   }
   .header {
+    margin-top: 1rem;
+    margin-bottom: 1.85rem;
     &__left-col {
       h1 {
         font-size: 1.5rem;

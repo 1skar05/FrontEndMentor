@@ -116,9 +116,18 @@ body {
   body {
     display: flex;
     justify-content: center;
+    background-color: hsl(210, 60%, 98%);
   }
   .container {
     max-width: 735px;
+    height: 100%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0.625rem;
+    margin: 3.75rem;
+  }
+  .header {
+    margin-top: 1rem;
+    margin-bottom: 1.85rem;
   }
   .header__left-col h1 {
     font-size: 1.5rem;
