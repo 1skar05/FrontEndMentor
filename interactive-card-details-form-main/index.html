@@ -1,51 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Interactive card details form</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap"
+      rel="stylesheet"
+    />
 
-  0000 0000 0000 0000
-  Jane Appleseed
-  00/00
+    <link rel="stylesheet" href="styles/main.css" />
 
-  000
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="card">
+        <div class="card__group">
+          <div class="card__front">
+            <img
+              src="./images/bg-card-front.png"
+              alt="bg-card-front"
+              class="card__front__bg"
+            />
+            <div class="card__front__container">
+              <div class="card__front__logo">
+                <img src="./images/card-logo.svg" alt="card-logo" />
+              </div>
+              <div class="card__front__number-group">
+                <span class="card__front__number">0000</span>
+                <span class="card__front__number">0000</span>
+                <span class="card__front__number">0000</span>
+                <span class="card__front__number">0000</span>
+              </div>
+              <div class="card__front__footer">
+                <div class="card__front__cardholder">Jane Appleseed</div>
+                <div class="card__front__exp">00/00</div>
+              </div>
+            </div>
+          </div>
+          <div class="card__back">
+            <img src="./images/bg-card-back.png" alt="bg-card-back" />
+            <span class="card__back__cvc">000</span>
+          </div>
+        </div>
+      </header>
 
-  Cardholder Name
-  e.g. Jane Appleseed
-
-  Card Number
-  e.g. 1234 5678 9123 0000
-
-  Exp. Date (MM/YY)
-  MM
-  YY
-
-  CVC
-  e.g. 123
-
-  Confirm
-
-  <!-- Completed state start -->
-
-  Thank you!
-  We've added your card details
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <form class="form">
+        <section class="form__card-details hide">
+          <div class="input-group">
+            <div class="input-group__col1">
+              <label for="card-name" class="input-group__label"
+                >Cardholder Name</label
+              >
+              <input
+                type="text"
+                id="card-name"
+                class="input-group__input input-group__input--large"
+                placeholder="e.g. Jane Appleseed"
+              />
+              <span class="input-group__warning"></span>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-group__col1">
+              <label for="card-number" class="input-group__label"
+                >Card Number</label
+              >
+              <input
+                type="text"
+                id="card-number"
+                class="input-group__input input-group__input--large"
+                placeholder="e.g. 1234 5678 9123 0000"
+              />
+              <span class="input-group__warning"></span>
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-group__col1">
+              <label for="cardholder-name" class="input-group__label"
+                >exp. Date (MM/YY)</label
+              >
+              <div class="input-group__wrapper">
+                <input
+                  type="text"
+                  class="input-group__input input-group__input--small"
+                  placeholder="MM"
+                />
+                <input
+                  type="text"
+                  class="input-group__input input-group__input--small"
+                  placeholder="YY"
+                />
+              </div>
+              <span class="input-group__warning"></span>
+            </div>
+            <div class="input-group__col2">
+              <label for="cardholder-name" class="input-group__label"
+                >cvc</label
+              >
+              <input
+                type="text"
+                class="input-group__input input-group__input--large"
+                placeholder="e.g. 123"
+              />
+            </div>
+          </div>
+        </section>
+        <section class="thank-you">
+          <!-- Completed state start -->
+          <img
+            src="./images/icon-complete.svg"
+            alt="icon-complete"
+            class="thank-you__icon"
+          />
+          <h1 class="thank-you__title">Thank you!</h1>
+          <p class="thank-you__description">We've added your card details</p>
+        </section>
+        <button type="submit" class="btn">Confirm</button>
+      </form>
+    </main>
+  </body>
 </html>

@@ -1,0 +1,29 @@
+// Colors
+$active-border: hsl(249, 99%, 64%), hsl(278, 94%, 30%);
+$red: hsl(0, 100%, 66%);
+
+$white: hsl(0, 0%, 100%);
+$light-grayish-violet: hsl(270, 3%, 87%);
+$dark-grayish-violet: hsl(279, 6%, 55%);
+$very-dark-violet: hsl(278, 68%, 11%);
+
+// background transparency
+$bg-transparency: rgba(0, 0, 0, 0.4);
+
+// font
+$Space-Grotesk: "Space Grotesk", sans-serif;
+
+// Standardlize
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: $Space-Grotesk;
+}

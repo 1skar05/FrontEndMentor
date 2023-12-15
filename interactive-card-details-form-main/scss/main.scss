@@ -1,0 +1,181 @@
+@use "base";
+
+.card {
+  background-image: url("../images/bg-main-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 240px;
+  position: relative;
+  &__front {
+    width: 286px;
+    height: 157px;
+    position: absolute;
+    bottom: -20%;
+    left: 4%;
+    z-index: 1;
+    &__bg {
+      width: 100%;
+      height: 100%;
+    }
+    &__container {
+      background-color: base.$bg-transparency;
+      border-radius: 5px;
+      width: 100%;
+      height: 100%;
+      padding: 1rem;
+      position: absolute;
+      top: 0;
+    }
+    &__logo {
+      img {
+        width: 3rem;
+      }
+    }
+    &__number-group {
+      font-size: 1.25rem;
+      color: base.$light-grayish-violet;
+      display: flex;
+      gap: 0.25rem;
+      margin-top: 2rem;
+      letter-spacing: 0.1rem;
+    }
+    &__footer {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.625rem;
+      color: base.$light-grayish-violet;
+      letter-spacing: 0.1rem;
+    }
+    &__cardholder {
+      text-transform: uppercase;
+    }
+  }
+
+  &__back {
+    position: absolute;
+    right: 4%;
+    top: 17.5%;
+    img {
+      width: 286px;
+      height: 157px;
+    }
+    &__cvc {
+      position: absolute;
+      font-size: 0.625rem;
+      top: 44%;
+      right: 13%;
+      color: base.$white;
+      letter-spacing: 0.1rem;
+    }
+  }
+}
+
+.form {
+  margin-top: 5rem;
+  padding: 0 1.25rem;
+  &__card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    .input-group {
+      display: flex;
+      gap: 0.5rem;
+      &__col1 {
+        width: 100%;
+      }
+      &__col2 {
+        width: 100%;
+      }
+      &__wrapper {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: space-between;
+      }
+      &__label {
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 0.124rem;
+        display: block;
+        margin-bottom: 0.45rem;
+        color: base.$very-dark-violet;
+      }
+      &__input {
+        font-family: base.$Space-Grotesk;
+        padding: 0.75rem 0;
+        font-weight: 500;
+        color: base.$very-dark-violet;
+        padding-left: 1rem;
+        font-size: 1.15rem;
+        border: 1px solid base.$light-grayish-violet;
+        border-radius: 8px;
+
+        &::placeholder {
+          color: base.$light-grayish-violet;
+          font-size: 1.15rem;
+        }
+
+        &:focus {
+          outline: none;
+          background: linear-gradient(base.$white, base.$white) padding-box,
+            linear-gradient(to right, base.$active-border) border-box;
+          border: 1px solid transparent;
+          border-radius: 8px;
+        }
+
+        &--large {
+          width: 100%;
+        }
+        &--small {
+          width: 48%;
+        }
+      }
+    }
+  }
+  .thank-you {
+    // display: none;
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    &__icon {
+      margin: 1.5rem 0;
+    }
+    &__title {
+      font-size: 2rem;
+      font-weight: 500;
+      color: base.$very-dark-violet;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.124rem;
+    }
+    &__description {
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: base.$dark-grayish-violet;
+      letter-spacing: 0.06px;
+    }
+  }
+  .btn {
+    font-family: base.$Space-Grotesk;
+    width: 100%;
+    background-color: base.$very-dark-violet;
+    color: base.$white;
+    border-radius: 5px;
+    padding: 0.75rem 0;
+    font-weight: 500;
+    letter-spacing: 0.063rem;
+    font-size: 0.925rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+      opacity: 0.8;
+      transition: 0.4s;
+    }
+  }
+}
+
+.hide {
+  display: none;
+}
