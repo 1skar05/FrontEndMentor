@@ -43,7 +43,7 @@ body {
 .card__front__logo img {
   width: 3rem;
 }
-.card__front__number-group {
+.card__front__number {
   font-size: 1.25rem;
   color: hsl(270, 3%, 87%);
   display: flex;
@@ -143,6 +143,13 @@ body {
 .form__card-details .input-group__input--small {
   width: 48%;
 }
+.form__card-details .input-group__input--error {
+  border: 1px solid hsl(0, 100%, 66%);
+}
+.form__card-details .input-group__warning {
+  color: hsl(0, 100%, 66%);
+  font-size: 0.75rem;
+}
 .form .thank-you {
   margin-top: 5rem;
   text-align: center;
@@ -180,7 +187,7 @@ body {
   transition: 0.4s;
 }
 .form .btn:hover {
-  opacity: 0.8;
+  opacity: 0.9;
   transition: 0.4s;
 }
 

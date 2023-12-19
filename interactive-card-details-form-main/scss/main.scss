@@ -31,7 +31,7 @@
         width: 3rem;
       }
     }
-    &__number-group {
+    &__number {
       font-size: 1.25rem;
       color: base.$light-grayish-violet;
       display: flex;
@@ -130,11 +130,19 @@
         &--small {
           width: 48%;
         }
+
+        &--error {
+          border: 1px solid base.$red;
+        }
+      }
+
+      &__warning {
+        color: base.$red;
+        font-size: 0.75rem;
       }
     }
   }
   .thank-you {
-    // display: none;
     margin-top: 5rem;
     text-align: center;
     margin-bottom: 2.5rem;
@@ -170,7 +178,7 @@
     cursor: pointer;
     transition: 0.4s;
     &:hover {
-      opacity: 0.8;
+      opacity: 0.9;
       transition: 0.4s;
     }
   }
