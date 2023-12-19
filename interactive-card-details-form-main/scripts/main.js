@@ -58,26 +58,6 @@ cvc.addEventListener("input", (e) => {
   backCvc.textContent = e.target.value;
 });
 
-btn.addEventListener("click", function (e) {
-  e.preventDefault();
-
-  checkValidity(cardName, nameWarning);
-  checkValidity(number, numberWarning);
-  checkValidity(month, dateWarning);
-  checkValidity(year, dateWarning);
-  checkValidity(cvc, cvcWarning);
-
-  if (!isValid()) {
-    thankYou.classList.add("hide");
-    cardDetails.classList.remove("hide");
-    btn.textContent = "Confirm";
-  } else {
-    cardDetails.classList.add("hide");
-    thankYou.classList.remove("hide");
-    btn.textContent = "Continue";
-  }
-});
-
 const isValid = () => {
   if (
     checkValidity(cardName, nameWarning) &&
@@ -101,7 +81,6 @@ const checkValidity = (input, warning) => {
   } else if (input.id === "card-name" && !isName(input)) {
     warning.textContent = "Wrong format, letters only";
     input.classList.add("input-group__input--error");
-
     valid = false;
   } else if (
     (input.id === "cvc" || input.id === "month" || input.id === "year") &&
@@ -119,3 +98,24 @@ const checkValidity = (input, warning) => {
 
   return valid;
 };
+
+btn.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  checkValidity(cardName, nameWarning);
+  checkValidity(number, numberWarning);
+  checkValidity(month, dateWarning);
+  checkValidity(year, dateWarning);
+  checkValidity(cvc, cvcWarning);
+
+  // If all the inputs are valid
+  if (isValid() && e.target.textContent === "Confirm") {
+    cardDetails.classList.toggle("hide");
+    thankYou.classList.toggle("hide");
+    btn.textContent = "Continue";
+  } else {
+    cardDetails.classList.remove("hide");
+    thankYou.classList.add("hide");
+    btn.textContent = "Confirm";
+  }
+});
