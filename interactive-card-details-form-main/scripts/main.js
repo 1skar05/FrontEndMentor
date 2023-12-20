@@ -41,6 +41,7 @@ number.addEventListener("input", (e) => {
   e.target.value = e.target.value.match(r)
     ? e.target.value.match(r).join(" ")
     : "";
+  frontNumber.textContent = e.target.value;
 });
 
 month.addEventListener("input", (e) => {
