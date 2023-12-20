@@ -217,16 +217,17 @@
       }
       &__number {
         margin-top: 4rem;
-        font-size: 1.785rem;
+        font-size: 1.8rem;
+        letter-spacing: 0.2rem;
       }
       &__footer {
-        margin-top: 1.5rem;
+        margin-top: 1.875rem;
       }
       &__cardholder {
-        font-size: 1rem;
+        font-size: 0.875rem;
       }
       &__exp {
-        font-size: 1rem;
+        font-size: 0.875rem;
       }
     }
     &__back {
@@ -239,9 +240,9 @@
       }
       &__cvc {
         position: absolute;
-        font-size: 0.625rem;
-        top: 44%;
-        right: 4%;
+        font-size: 0.875rem;
+        top: 45%;
+        right: 12%;
         color: base.$white;
       }
     }

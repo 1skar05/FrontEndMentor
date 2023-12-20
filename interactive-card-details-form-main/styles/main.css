@@ -224,16 +224,17 @@ body {
   }
   .card__front__number {
     margin-top: 4rem;
-    font-size: 1.785rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.2rem;
   }
   .card__front__footer {
-    margin-top: 1.5rem;
+    margin-top: 1.875rem;
   }
   .card__front__cardholder {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
   .card__front__exp {
-    font-size: 1rem;
+    font-size: 0.875rem;
   }
   .card__back {
     position: absolute;
@@ -246,9 +247,9 @@ body {
   }
   .card__back__cvc {
     position: absolute;
-    font-size: 0.625rem;
-    top: 44%;
-    right: 4%;
+    font-size: 0.875rem;
+    top: 45%;
+    right: 12%;
     color: hsl(0, 0%, 100%);
   }
   .form {
