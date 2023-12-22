@@ -53,9 +53,10 @@ body {
     color: base.$dark-brown;
   }
   &__grid {
-    margin-top: 3rem;
+    // margin-top: 3rem;
     margin-bottom: 2rem;
     padding-bottom: 1.563rem;
+    height: 250px;
     display: flex;
     justify-content: space-between;
     align-items: end;
@@ -65,16 +66,30 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: fit-content;
+    height: -moz-max-content;
+    cursor: pointer;
+    width: 4.25rem;
+
+    transition: 0.3s;
+    &:hover {
+      .chart__bar {
+        opacity: 0.6;
+        transition: 0.3s;
+      }
+      .chart__box {
+        display: block;
+      }
+    }
   }
   &__bar {
     width: base.$bar-mobile-width;
     color: base.$soft-red;
     border-radius: base.$bar-radius;
     background-color: base.$soft-red;
+    animation: rising-bar 0.8s linear;
     position: relative;
-    &:hover {
-      opacity: 0.6;
-    }
+
     &--active {
       background-color: base.$cyan;
     }
@@ -101,14 +116,15 @@ body {
       height: 73px;
     }
   }
-  &__price {
+  &__box {
     display: none;
     color: base.$very-pale-orange;
     font-weight: base.$font-weight-bold;
-    font-size: 0.75rem;
+    font-size: 1rem;
     background-color: base.$dark-brown;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem;
     margin-bottom: 0.45rem;
+    border-radius: base.$box-radius;
   }
   &__label {
     margin-top: 0.625rem;
@@ -120,7 +136,7 @@ body {
     padding-bottom: 5px;
     justify-content: space-between;
     &__title {
-      color: base.$dark-brown;
+      color: base.$medium-brown;
       font-weight: base.$font-weight-regular;
       font-size: 0.975rem;
       line-height: base.$line-height-default;
@@ -130,7 +146,7 @@ body {
       font-weight: base.$font-weight-bold;
       font-size: 1.85rem;
     }
-    &-col-2 {
+    &__col-2 {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
@@ -144,5 +160,56 @@ body {
       color: base.$medium-brown;
       font-weight: base.$font-weight-regular;
     }
+  }
+}
+
+// desktop
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 540px;
+    margin: 0 auto;
+  }
+
+  .balance {
+    padding: 1.5rem 2rem;
+    border-radius: base.$border-radius-desktop;
+  }
+
+  .chart {
+    border-radius: base.$border-radius-desktop;
+    padding: 1.5rem 2rem;
+    &__title {
+      font-size: 2rem;
+    }
+    &__grid {
+      height: 280px;
+    }
+    &__bar {
+      width: base.$bar-desktop-width;
+    }
+    &__box {
+      width: 100%;
+    }
+    &__total {
+      padding-bottom: 1.25rem;
+      &__col-2 {
+        font-size: base.$font-size-default;
+      }
+      &__title {
+        font-size: base.$font-size-default;
+      }
+      &__amount {
+        font-size: 3rem;
+      }
+    }
+  }
+}
+
+// rising bar animation
+
+@keyframes rising-bar {
+  0% {
+    height: 0;
   }
 }
