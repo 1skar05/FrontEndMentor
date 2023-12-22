@@ -85,7 +85,7 @@ body {
   &__bar {
     width: base.$bar-mobile-width;
     color: base.$soft-red;
-    border-radius: base.$bar-radius;
+    border-radius: base.$bar-radius-mobile;
     background-color: base.$soft-red;
     animation: rising-bar 0.8s linear;
     position: relative;
@@ -186,6 +186,7 @@ body {
       height: 280px;
     }
     &__bar {
+      border-radius: base.$bar-radius-desktop;
       width: base.$bar-desktop-width;
     }
     &__box {

@@ -187,6 +187,7 @@ body {
     height: 280px;
   }
   .chart__bar {
+    border-radius: 0.313rem;
     width: 3.125rem;
   }
   .chart__box {
