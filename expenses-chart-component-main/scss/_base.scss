@@ -23,6 +23,8 @@ $box-radius: 0.313rem;
 
 // offset
 $bar-gap: 0.625rem;
+$container-gap-mobile: 0.625rem;
+$container-gap-desktop: 1.5rem;
 
 // chart
 $bar-mobile-width: 2rem;
@@ -44,5 +46,8 @@ body {
 }
 
 // balance logo
-$logo-width: 3.75rem;
-$logo-height: 2.5rem;
+$logo-width-mobile: 3.75rem;
+$logo-height-mobile: 2.5rem;
+
+$logo-width-desktop: 4.563rem;
+$logo-height-desktop: 3.063rem;

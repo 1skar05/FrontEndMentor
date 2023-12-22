@@ -8,7 +8,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: base.$container-gap-mobile;
   height: 100%;
   justify-content: center;
 }
@@ -21,23 +21,25 @@ body {
   border-radius: base.$border-radius-default;
   padding: 1rem;
   &__col-1 {
-    color: base.$very-pale-orange;
     font-family: base.$font-primary;
   }
 
   &__logo {
-    width: base.$logo-width;
-    height: base.$logo-height;
-    aspect-ratio: base.$logo-width/base.$logo-height;
+    width: base.$logo-width-mobile;
+    height: base.$logo-height-mobile;
+    aspect-ratio: base.$logo-width-mobile/base.$logo-height-mobile;
   }
 
   &__title {
     font-size: 1.125rem;
     font-weight: base.$font-weight-regular;
+    color: base.$cream;
+    margin-bottom: 0.25rem;
   }
   &__amount {
     font-size: 1.75rem;
     font-weight: base.$font-weight-bold;
+    color: base.$very-pale-orange;
   }
 }
 
@@ -169,11 +171,23 @@ body {
   .container {
     max-width: 540px;
     margin: 0 auto;
+    gap: base.$container-gap-desktop;
   }
 
   .balance {
     padding: 1.5rem 2rem;
     border-radius: base.$border-radius-desktop;
+    &__title {
+      font-size: 1.25rem;
+    }
+    &__amount {
+      font-size: 2.45rem;
+    }
+    &__logo {
+      width: base.$logo-width-desktop;
+      height: base.$logo-height-desktop;
+      aspect-ratio: base.$logo-width-desktop/base.$logo-height-desktop;
+    }
   }
 
   .chart {
@@ -181,6 +195,7 @@ body {
     padding: 1.5rem 2rem;
     &__title {
       font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
     &__grid {
       height: 280px;

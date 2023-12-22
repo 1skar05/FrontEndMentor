@@ -19,7 +19,7 @@ body {
   margin: 0 1rem;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0.625rem;
   height: 100%;
   justify-content: center;
 }
@@ -33,7 +33,6 @@ body {
   padding: 1rem;
 }
 .balance__col-1 {
-  color: hsl(33, 100%, 98%);
   font-family: "DM Sans", sans-serif;
 }
 .balance__logo {
@@ -44,10 +43,13 @@ body {
 .balance__title {
   font-size: 1.125rem;
   font-weight: 400;
+  color: hsl(27, 66%, 92%);
+  margin-bottom: 0.25rem;
 }
 .balance__amount {
   font-size: 1.75rem;
   font-weight: 700;
+  color: hsl(33, 100%, 98%);
 }
 
 .chart {
@@ -171,10 +173,22 @@ body {
   .container {
     max-width: 540px;
     margin: 0 auto;
+    gap: 1.5rem;
   }
   .balance {
     padding: 1.5rem 2rem;
     border-radius: 1.25rem;
+  }
+  .balance__title {
+    font-size: 1.25rem;
+  }
+  .balance__amount {
+    font-size: 2.45rem;
+  }
+  .balance__logo {
+    width: 4.563rem;
+    height: 3.063rem;
+    aspect-ratio: 1.4897159647;
   }
   .chart {
     border-radius: 1.25rem;
@@ -182,6 +196,7 @@ body {
   }
   .chart__title {
     font-size: 2rem;
+    margin-bottom: 0.5rem;
   }
   .chart__grid {
     height: 280px;
