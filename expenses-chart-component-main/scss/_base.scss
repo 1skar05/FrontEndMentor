@@ -1,0 +1,45 @@
+// Colors
+$soft-red: hsl(10, 79%, 65%);
+$cyan: hsl(186, 34%, 60%);
+
+$dark-brown: hsl(25, 47%, 15%);
+$medium-brown: hsl(28, 10%, 53%);
+$cream: hsl(27, 66%, 92%);
+$very-pale-orange: hsl(33, 100%, 98%);
+
+// Typography
+
+$font-primary: "DM Sans", sans-serif;
+$font-weight-regular: 400;
+$font-weight-bold: 700;
+$font-size-default: 18px;
+$line-height-default: 1.5;
+
+$border-radius-default: 0.625rem;
+$bar-radius: 0.188rem;
+
+// offset
+$bar-gap: 0.625rem;
+
+// chart
+$bar-mobile-width: 2rem;
+$bar-desktop-width: 3.125rem;
+
+// Standardlize
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+// balance logo
+$logo-width: 3.75rem;
+$logo-height: 2.5rem;

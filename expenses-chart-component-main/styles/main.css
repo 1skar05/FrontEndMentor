@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: hsl(27, 66%, 92%);
+}
+
+.container {
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  justify-content: center;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 0.625rem;
+  padding: 1rem;
+}
+.balance__col-1 {
+  color: hsl(33, 100%, 98%);
+  font-family: "DM Sans", sans-serif;
+}
+.balance__logo {
+  width: 3.75rem;
+  height: 2.5rem;
+  aspect-ratio: 1.5;
+}
+.balance__title {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.balance__amount {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.chart {
+  background-color: hsl(33, 100%, 98%);
+  border-radius: 0.625rem;
+  padding: 1.25rem;
+  font-family: "DM Sans", sans-serif;
+}
+.chart__title {
+  margin-top: 5px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: hsl(25, 47%, 15%);
+}
+.chart__grid {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.563rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  border-bottom: 1px solid hsl(27, 66%, 92%);
+}
+.chart__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chart__bar {
+  width: 2rem;
+  color: hsl(10, 79%, 65%);
+  border-radius: 0.188rem;
+  background-color: hsl(10, 79%, 65%);
+  position: relative;
+}
+.chart__bar:hover {
+  opacity: 0.6;
+}
+.chart__bar--active {
+  background-color: hsl(186, 34%, 60%);
+}
+.chart__bar__col-1 {
+  height: 50px;
+}
+.chart__bar__col-2 {
+  height: 100px;
+}
+.chart__bar__col-3 {
+  height: 150px;
+}
+.chart__bar__col-4 {
+  height: 90px;
+}
+.chart__bar__col-5 {
+  height: 67px;
+}
+.chart__bar__col-6 {
+  height: 124px;
+}
+.chart__bar__col-7 {
+  height: 73px;
+}
+.chart__price {
+  display: none;
+  color: hsl(33, 100%, 98%);
+  font-weight: 700;
+  font-size: 0.75rem;
+  background-color: hsl(25, 47%, 15%);
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0.45rem;
+}
+.chart__label {
+  margin-top: 0.625rem;
+  font-size: 0.75rem;
+  color: hsl(28, 10%, 53%);
+}
+.chart__total {
+  display: flex;
+  padding-bottom: 5px;
+  justify-content: space-between;
+}
+.chart__total__title {
+  color: hsl(25, 47%, 15%);
+  font-weight: 400;
+  font-size: 0.975rem;
+  line-height: 1.5;
+}
+.chart__total__amount {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+  font-size: 1.85rem;
+}
+.chart__total-col-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: end;
+}
+.chart__total__percent {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+}
+.chart__total__text {
+  color: hsl(28, 10%, 53%);
+  font-weight: 400;
+}/*# sourceMappingURL=main.css.map */

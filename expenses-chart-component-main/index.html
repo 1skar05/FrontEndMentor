@@ -1,43 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Expenses chart component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <link rel="stylesheet" href="/styles/main.css" />
 
-  My balance
-  $921.48
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="balance">
+        <div class="balance__col-1">
+          <h1 class="balance__title">My balance</h1>
+          <p class="balance__amount">$921.48</p>
+        </div>
+        <div class="balance__col-2">
+          <img src="images/logo.svg" alt="logo" class="balance__logo" />
+        </div>
+      </section>
 
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <section class="chart">
+        <h1 class="chart__title">Spending - Last 7 days</h1>
+        <div class="chart__grid">
+          <div class="chart__group">
+            <p class="chart__price">$52.36</p>
+            <div class="chart__bar chart__bar__col-1" data-name="mon"></div>
+            <p class="chart__label">mon</p>
+          </div>
+          <div class="chart__group">
+            <p class="chart__price">$52.36</p>
+            <div class="chart__bar chart__bar__col-2" data-name="tue"></div>
+            <p class="chart__label">tue</p>
+          </div>
+          <div class="chart__group">
+            <p class="chart__price">$52.36</p>
+            <div
+              class="chart__bar chart__bar--active chart__bar__col-3"
+              data-name="wed"
+            ></div>
+            <p class="chart__label">wed</p>
+          </div>
+          <div class="chart__group">
+            <p class="chart__price">$52.36</p>
+            <div class="chart__bar chart__bar__col-4" data-name="thu"></div>
+            <p class="chart__label">thu</p>
+          </div>
+          <div>
+            <p class="chart__price">$52.36</p>
+            <div class="chart__bar chart__bar__col-5" data-name="fri"></div>
+            <p class="chart__label">fri</p>
+          </div>
+          <div class="chart__group">
+            <p class="chart__price">$52.36</p>
+            <div class="chart__bar chart__bar__col-6" data-name="sat"></div>
+            <p class="chart__label">sat</p>
+          </div>
+          <div class="chart__group">
+            <p class="chart__price">$52.36</p>
+            <div class="chart__bar chart__bar__col-7" data-name="sun"></div>
+            <p class="chart__label">sun</p>
+          </div>
+        </div>
+        <div class="chart__total">
+          <div class="chart__total-col-1">
+            <h1 class="chart__total__title">Total this month</h1>
+            <p class="chart__total__amount">$478.33</p>
+          </div>
+          <div class="chart__total-col-2">
+            <span class="chart__total__percent">+2.4%</span>
+            <p class="chart__total__text">from last month</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

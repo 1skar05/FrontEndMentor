@@ -1,0 +1,148 @@
+@use "base";
+
+body {
+  background-color: base.$cream;
+}
+.container {
+  margin: 0 1rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  justify-content: center;
+}
+
+.balance {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: base.$soft-red;
+  border-radius: base.$border-radius-default;
+  padding: 1rem;
+  &__col-1 {
+    color: base.$very-pale-orange;
+    font-family: base.$font-primary;
+  }
+
+  &__logo {
+    width: base.$logo-width;
+    height: base.$logo-height;
+    aspect-ratio: base.$logo-width/base.$logo-height;
+  }
+
+  &__title {
+    font-size: 1.125rem;
+    font-weight: base.$font-weight-regular;
+  }
+  &__amount {
+    font-size: 1.75rem;
+    font-weight: base.$font-weight-bold;
+  }
+}
+
+.chart {
+  background-color: base.$very-pale-orange;
+  border-radius: base.$border-radius-default;
+  padding: 1.25rem;
+  font-family: base.$font-primary;
+  &__title {
+    margin-top: 5px;
+    font-size: 1.5rem;
+    font-weight: base.$font-weight-bold;
+    color: base.$dark-brown;
+  }
+  &__grid {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1.563rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    border-bottom: 1px solid base.$cream;
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__bar {
+    width: base.$bar-mobile-width;
+    color: base.$soft-red;
+    border-radius: base.$bar-radius;
+    background-color: base.$soft-red;
+    position: relative;
+    &:hover {
+      opacity: 0.6;
+    }
+    &--active {
+      background-color: base.$cyan;
+    }
+
+    &__col-1 {
+      height: 50px;
+    }
+    &__col-2 {
+      height: 100px;
+    }
+    &__col-3 {
+      height: 150px;
+    }
+    &__col-4 {
+      height: 90px;
+    }
+    &__col-5 {
+      height: 67px;
+    }
+    &__col-6 {
+      height: 124px;
+    }
+    &__col-7 {
+      height: 73px;
+    }
+  }
+  &__price {
+    display: none;
+    color: base.$very-pale-orange;
+    font-weight: base.$font-weight-bold;
+    font-size: 0.75rem;
+    background-color: base.$dark-brown;
+    padding: 0.25rem 0.5rem;
+    margin-bottom: 0.45rem;
+  }
+  &__label {
+    margin-top: 0.625rem;
+    font-size: 0.75rem;
+    color: base.$medium-brown;
+  }
+  &__total {
+    display: flex;
+    padding-bottom: 5px;
+    justify-content: space-between;
+    &__title {
+      color: base.$dark-brown;
+      font-weight: base.$font-weight-regular;
+      font-size: 0.975rem;
+      line-height: base.$line-height-default;
+    }
+    &__amount {
+      color: base.$dark-brown;
+      font-weight: base.$font-weight-bold;
+      font-size: 1.85rem;
+    }
+    &-col-2 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: end;
+    }
+    &__percent {
+      color: base.$dark-brown;
+      font-weight: base.$font-weight-bold;
+    }
+    &__text {
+      color: base.$medium-brown;
+      font-weight: base.$font-weight-regular;
+    }
+  }
+}
