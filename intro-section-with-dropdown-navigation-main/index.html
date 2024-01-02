@@ -1,39 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
 
-  Features
-  Company
-  Careers
-  About
+    <!-- main.css -->
+    <link rel="stylesheet" href="styles/main.css" />
 
-  Login
-  Register
-
-  Make remote work
-
-  Get your team in sync, no matter your location. Streamline processes, 
-  create team rituals, and watch productivity soar.
-
-  Learn more
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <img class="logo" src="images/logo.svg" alt="logo" />
+      <nav class="nav">
+        <button class="nav__hamburger">
+          <img src="images/icon-menu.svg" alt="icon__hamburger" />
+        </button>
+        <div class="nav__outer">
+          <div class="nav__inner">
+            <div class="nav__col-1">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <button class="nav__close">
+                    <img
+                      src="images/icon-close-menu.svg"
+                      alt="icon-close-menu"
+                    />
+                  </button>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link">Features</a>
+                  <div class="nav__item__content">
+                    <div class="nav__item__box">
+                      <img
+                        class="nav__item__icon todo"
+                        src="images/icon-todo.svg"
+                        alt="icon-todo"
+                      />
+                      <a class="nav__item__link" href="#">Todo List</a>
+                    </div>
+                    <div class="nav__item__box">
+                      <img
+                        class="nav__item__icon"
+                        src="images/icon-calendar.svg"
+                        alt="icon-calendar"
+                      />
+                      <a class="nav__item__link" href="#">Calendar</a>
+                    </div>
+                    <div class="nav__item__box">
+                      <img
+                        class="nav__item__icon reminder"
+                        src="images/icon-reminders.svg"
+                        alt="icon-reminders"
+                      />
+                      <a class="nav__item__link" href="#">Reminders</a>
+                    </div>
+                    <div class="nav__item__box">
+                      <img
+                        class="nav__item__icon"
+                        src="images/icon-planning.svg"
+                        alt="icon-planning"
+                      />
+                      <a class="nav__item__link" href="#">Planning</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link">Company</a>
+                  <div class="nav__item__content">
+                    <div class="nav__item__box">
+                      <a class="nav__item__link" href="#">History</a>
+                    </div>
+                    <div class="nav__item__box">
+                      <a class="nav__item__link" href="#">Our Team</a>
+                    </div>
+                    <div class="nav__item__box">
+                      <a class="nav__item__link" href="#">Blog</a>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Careers</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">About</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__col-2">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <button class="nav__item__btn login">Login</button>
+                </li>
+                <li class="nav__item">
+                  <button class="nav__item__btn register">Register</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="site-content">
+      Features Company About Login Register Make remote work Get your team in
+      sync, no matter your location. Streamline processes, create team rituals,
+      and watch productivity soar. Learn more
+    </main>
+  </body>
 </html>
