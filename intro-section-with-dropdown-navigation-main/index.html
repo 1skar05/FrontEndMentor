@@ -118,10 +118,45 @@
       </nav>
     </header>
     <main class="site-content">
-      <img src="images/image-hero-mobile.png" style="width: 100%" alt="" />
-      Features Company About Login Register Make remote work Get your team in
-      sync, no matter your location. Streamline processes, create team rituals,
-      and watch productivity soar. Learn more
+      <section class="hero">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="images/image-hero-desktop.png"
+          />
+          <img
+            src="images/image-hero-mobile.png"
+            alt="image-hero"
+            class="hero__image"
+          />
+        </picture>
+        <div class="hero__content">
+          <h1 class="hero__title">Make remote work</h1>
+          <p class="hero__text">
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button class="hero__cta">Learn more</button>
+          <div class="hero__client">
+            <img
+              class="databiz"
+              src="images/client-databiz.svg"
+              alt="client-databiz"
+            />
+            <img
+              class="audiophile"
+              src="images/client-audiophile.svg"
+              alt="client-audiophile"
+            />
+            <img class="meet" src="images/client-meet.svg" alt="client-meet" />
+            <img
+              class="maker"
+              src="images/client-maker.svg"
+              alt="client-maker"
+            />
+          </div>
+        </div>
+      </section>
     </main>
 
     <script src="scripts/main.js"></script>

@@ -9,6 +9,7 @@
       width: base.$logo-width;
       height: base.$logo-height;
       aspect-ratio: base.$logo-aspect-ratio;
+      user-select: none;
     }
     .nav {
       display: flex;
@@ -23,6 +24,7 @@
       &__hamburger {
         background: none;
         border: none;
+        user-select: none;
       }
 
       &__list {
@@ -34,6 +36,7 @@
       &__close {
         background: none;
         border: none;
+        user-select: none;
         float: right;
         margin-top: 1.25rem;
         transition: all 0.2s ease-in-out;
@@ -68,6 +71,7 @@
 
         font-weight: base.$nav-link-font-weight;
         line-height: base.$nav-link-line-height;
+        user-select: none;
         &.dropdown {
           &::after {
             content: "";
@@ -99,7 +103,6 @@
           font-weight: base.$font-weight-medium;
           margin-left: 1.65rem;
           margin-top: 1.75rem;
-          // display: flex;
           flex-direction: column;
           gap: 1.25rem;
           &.active {
@@ -126,6 +129,7 @@
         &__link {
           text-decoration: none;
           color: base.$nav-link-color;
+          user-select: none;
         }
         &__btn {
           width: 100%;
@@ -139,6 +143,78 @@
             border: 1px solid base.$medium-gray;
             border-radius: base.$register-border-radius;
           }
+        }
+      }
+    }
+  }
+  &-content {
+    .hero {
+      margin-bottom: 5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      &__image {
+        width: 100%;
+      }
+      &__content {
+        margin: 0 1rem;
+        text-align: center;
+      }
+      &__title {
+        font-family: base.$font-primary;
+        font-weight: base.$font-weight-bold;
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+      }
+      &__text {
+        font-family: base.$font-primary;
+        font-weight: base.$font-weight-medium;
+        line-height: base.$line-height-paragraph;
+
+        color: base.$medium-gray;
+
+        margin-bottom: 1.75rem;
+      }
+      &__cta {
+        padding: 1.125rem 1.82rem;
+        border-radius: 1rem;
+        border: 1px solid;
+        background-color: base.$almost-black;
+        color: base.$almost-white;
+        font-family: base.$font-primary;
+        font-weight: base.$font-weight-bold;
+        line-height: base.$line-height-paragraph;
+
+        margin-bottom: 2.5rem;
+
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          color: base.$almost-black;
+          transition: all 0.2s ease-in-out;
+          background-color: unset;
+          border: 1px solid;
+        }
+      }
+      &__client {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .databiz {
+          max-width: base.$databiz-max-width;
+          height: base.$databiz-height;
+        }
+        .audiophile {
+          max-width: base.$audiophile-max-width;
+          height: base.$audiophile-height;
+        }
+        .meet {
+          max-width: base.$meet-max-width;
+          height: base.$meet-height;
+        }
+        .maker {
+          max-width: base.$maker-max-width;
+          height: base.$maker-height;
         }
       }
     }
