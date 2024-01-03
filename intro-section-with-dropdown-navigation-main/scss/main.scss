@@ -2,12 +2,13 @@
 
 .site {
   &-header {
-    margin: 1.5rem 1rem 2rem 1rem;
+    margin: 1.25rem 1rem 2rem 1rem;
     display: flex;
     justify-content: space-between;
     .logo {
       width: base.$logo-width;
       height: base.$logo-height;
+      aspect-ratio: base.$logo-aspect-ratio;
     }
     .nav {
       display: flex;
@@ -22,7 +23,6 @@
       &__hamburger {
         background: none;
         border: none;
-        // display: none;
       }
 
       &__list {
@@ -35,10 +35,11 @@
         background: none;
         border: none;
         float: right;
-        margin-top: 1rem;
+        margin-top: 1.25rem;
+        transition: all 0.2s ease-in-out;
       }
       &__outer {
-        // display: none;
+        display: none;
         position: fixed;
         top: 0;
         right: 0;
@@ -47,6 +48,12 @@
         width: 100%;
         background-color: rgba(0, 0, 0, 0.5);
         z-index: 1;
+
+        transition: all 0.4s ease-in-out;
+        &.active {
+          transition: all 0.4s ease-in-out;
+          display: block;
+        }
       }
       &__inner {
         background-color: base.$almost-white;
@@ -61,20 +68,43 @@
 
         font-weight: base.$nav-link-font-weight;
         line-height: base.$nav-link-line-height;
+        &.dropdown {
+          &::after {
+            content: "";
+            background: url("../images/icon-arrow-down.svg");
+            background-repeat: no-repeat;
+            display: inline-block;
+            width: 9px;
+            height: 6px;
+            aspect-ratio: 9 / 6;
+            margin-bottom: 2px;
+            margin-left: 1rem;
+            transition: all 0.2s ease-in-out;
+          }
+          &.active {
+            &::after {
+              transition: all 0.2s ease-in-out;
+              background: url("../images/icon-arrow-up.svg");
+            }
+          }
+        }
       }
       &__item {
         list-style: none;
         margin-left: 1.563rem;
         margin-right: 1.25rem;
         &__content {
-          // display: none;
+          display: none;
           font-family: base.$font-primary;
           font-weight: base.$font-weight-medium;
           margin-left: 1.65rem;
           margin-top: 1.75rem;
-          display: flex;
+          // display: flex;
           flex-direction: column;
           gap: 1.25rem;
+          &.active {
+            display: flex;
+          }
         }
         &__box {
           display: flex;

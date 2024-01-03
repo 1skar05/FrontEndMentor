@@ -31,6 +31,7 @@ $nav-margin-bottom-mobile: 3.75rem;
 
 $logo-width: 5.219rem;
 $logo-height: 1.719rem;
+$logo-aspect-ratio: $logo-width / $logo-height;
 
 $nav-link-color: $medium-gray;
 $nav-link-color-hover: $almost-black;
