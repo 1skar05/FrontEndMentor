@@ -1,5 +1,5 @@
 const btnBurger = document.querySelector(".nav__hamburger");
-const navMenu = document.querySelector(".nav__outer");
+const navMenu = document.querySelector(".nav__menu-mobile");
 const btnClose = document.querySelector(".nav__close");
 const dropdownBtnGroup = document.querySelectorAll(".dropdown");
 const dropdownContent = document.querySelectorAll(".nav__item__content");

@@ -32,90 +32,160 @@
         <button class="nav__hamburger">
           <img src="images/icon-menu.svg" alt="icon__hamburger" />
         </button>
-        <div class="nav__outer">
-          <div class="nav__inner">
-            <div class="nav__col-1">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <button class="nav__close">
+        <div class="nav__menu">
+          <div class="nav__col-1">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link dropdown">Features</a>
+                <div class="nav__item__content">
+                  <div class="nav__item__box">
                     <img
-                      src="images/icon-close-menu.svg"
-                      alt="icon-close-menu"
+                      class="nav__item__icon todo"
+                      src="images/icon-todo.svg"
+                      alt="icon-todo"
                     />
-                  </button>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link dropdown">Features</a>
-                  <div class="nav__item__content">
-                    <div class="nav__item__box">
-                      <img
-                        class="nav__item__icon todo"
-                        src="images/icon-todo.svg"
-                        alt="icon-todo"
-                      />
-                      <a class="nav__item__link" href="#">Todo List</a>
-                    </div>
-                    <div class="nav__item__box">
-                      <img
-                        class="nav__item__icon"
-                        src="images/icon-calendar.svg"
-                        alt="icon-calendar"
-                      />
-                      <a class="nav__item__link" href="#">Calendar</a>
-                    </div>
-                    <div class="nav__item__box">
-                      <img
-                        class="nav__item__icon reminder"
-                        src="images/icon-reminders.svg"
-                        alt="icon-reminders"
-                      />
-                      <a class="nav__item__link" href="#">Reminders</a>
-                    </div>
-                    <div class="nav__item__box">
-                      <img
-                        class="nav__item__icon"
-                        src="images/icon-planning.svg"
-                        alt="icon-planning"
-                      />
-                      <a class="nav__item__link" href="#">Planning</a>
-                    </div>
+                    <a class="nav__item__link" href="#">Todo List</a>
                   </div>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link dropdown">Company</a>
-                  <div class="nav__item__content">
-                    <div class="nav__item__box">
-                      <a class="nav__item__link" href="#">History</a>
-                    </div>
-                    <div class="nav__item__box">
-                      <a class="nav__item__link" href="#">Our Team</a>
-                    </div>
-                    <div class="nav__item__box">
-                      <a class="nav__item__link" href="#">Blog</a>
-                    </div>
+                  <div class="nav__item__box">
+                    <img
+                      class="nav__item__icon"
+                      src="images/icon-calendar.svg"
+                      alt="icon-calendar"
+                    />
+                    <a class="nav__item__link" href="#">Calendar</a>
                   </div>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">Careers</a>
-                </li>
-                <li class="nav__item">
-                  <a class="nav__link" href="#">About</a>
-                </li>
-              </ul>
-            </div>
-            <div class="nav__col-2">
-              <ul class="nav__list">
-                <li class="nav__item">
-                  <button class="nav__item__btn login">Login</button>
-                </li>
-                <li class="nav__item">
-                  <button class="nav__item__btn register">Register</button>
-                </li>
-              </ul>
-            </div>
+                  <div class="nav__item__box">
+                    <img
+                      class="nav__item__icon reminder"
+                      src="images/icon-reminders.svg"
+                      alt="icon-reminders"
+                    />
+                    <a class="nav__item__link" href="#">Reminders</a>
+                  </div>
+                  <div class="nav__item__box">
+                    <img
+                      class="nav__item__icon"
+                      src="images/icon-planning.svg"
+                      alt="icon-planning"
+                    />
+                    <a class="nav__item__link" href="#">Planning</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link dropdown">Company</a>
+                <div class="nav__item__content">
+                  <div class="nav__item__box">
+                    <a class="nav__item__link" href="#">History</a>
+                  </div>
+                  <div class="nav__item__box">
+                    <a class="nav__item__link" href="#">Our Team</a>
+                  </div>
+                  <div class="nav__item__box">
+                    <a class="nav__item__link" href="#">Blog</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Careers</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__col-2">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <button class="nav__item__btn login">Login</button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__item__btn register">Register</button>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
+      <div class="nav__menu-mobile">
+        <div class="nav__inner">
+          <div class="nav__col-1">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <button class="nav__close">
+                  <img src="images/icon-close-menu.svg" alt="icon-close-menu" />
+                </button>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link dropdown">Features</a>
+                <div class="nav__item__content">
+                  <div class="nav__item__box">
+                    <img
+                      class="nav__item__icon todo"
+                      src="images/icon-todo.svg"
+                      alt="icon-todo"
+                    />
+                    <a class="nav__item__link" href="#">Todo List</a>
+                  </div>
+                  <div class="nav__item__box">
+                    <img
+                      class="nav__item__icon"
+                      src="images/icon-calendar.svg"
+                      alt="icon-calendar"
+                    />
+                    <a class="nav__item__link" href="#">Calendar</a>
+                  </div>
+                  <div class="nav__item__box">
+                    <img
+                      class="nav__item__icon reminder"
+                      src="images/icon-reminders.svg"
+                      alt="icon-reminders"
+                    />
+                    <a class="nav__item__link" href="#">Reminders</a>
+                  </div>
+                  <div class="nav__item__box">
+                    <img
+                      class="nav__item__icon"
+                      src="images/icon-planning.svg"
+                      alt="icon-planning"
+                    />
+                    <a class="nav__item__link" href="#">Planning</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link dropdown">Company</a>
+                <div class="nav__item__content">
+                  <div class="nav__item__box">
+                    <a class="nav__item__link" href="#">History</a>
+                  </div>
+                  <div class="nav__item__box">
+                    <a class="nav__item__link" href="#">Our Team</a>
+                  </div>
+                  <div class="nav__item__box">
+                    <a class="nav__item__link" href="#">Blog</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Careers</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="nav__col-2">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <button class="nav__item__btn login">Login</button>
+              </li>
+              <li class="nav__item">
+                <button class="nav__item__btn register">Register</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </header>
     <main class="site-content">
       <section class="hero">

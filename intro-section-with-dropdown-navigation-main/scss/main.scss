@@ -41,7 +41,10 @@
         margin-top: 1.25rem;
         transition: all 0.2s ease-in-out;
       }
-      &__outer {
+      &__menu {
+        display: none;
+      }
+      &__menu-mobile {
         display: none;
         position: fixed;
         top: 0;
@@ -215,6 +218,77 @@
         .maker {
           max-width: base.$maker-max-width;
           height: base.$maker-height;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .site {
+    &-header {
+      margin: 1.5rem 2rem;
+      .nav {
+        width: 100%;
+        margin-left: 3.75rem;
+        &__hamburger {
+          display: none;
+        }
+        &__menu {
+          display: flex;
+          justify-content: space-between;
+          width: 100%;
+        }
+        &__col-1 {
+          margin-bottom: 0;
+        }
+        &__list {
+          flex-direction: row;
+          align-items: center;
+          gap: 2.5rem;
+        }
+        &__link {
+          text-wrap: nowrap;
+
+          &.dropdown {
+            &::after {
+              margin-left: 0.4rem;
+              margin-bottom: 1px;
+            }
+          }
+        }
+        &__item {
+          margin: 0;
+          position: relative;
+          &__content {
+            position: absolute;
+            margin: 0;
+            margin-top: 1rem;
+            background-color: base.$almost-white;
+            border-radius: 1rem;
+            padding: 1.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            padding-right: 2.25rem;
+            gap: 1rem;
+          }
+          &__box {
+            display: inline-flex;
+          }
+          &__link {
+            text-wrap: nowrap;
+          }
+          &__btn {
+            &.register {
+              padding: 1rem 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    &-content {
+      .hero {
+        &__title {
+          font-size: 2rem;
         }
       }
     }

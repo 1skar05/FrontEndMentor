@@ -57,7 +57,10 @@ body {
   margin-top: 1.25rem;
   transition: all 0.2s ease-in-out;
 }
-.site-header .nav__outer {
+.site-header .nav__menu {
+  display: none;
+}
+.site-header .nav__menu-mobile {
   display: none;
   position: fixed;
   top: 0;
@@ -68,7 +71,7 @@ body {
   z-index: 1;
   transition: all 0.4s ease-in-out;
 }
-.site-header .nav__outer.active {
+.site-header .nav__menu-mobile.active {
   transition: all 0.4s ease-in-out;
   display: block;
 }
@@ -223,4 +226,64 @@ body {
 .site-content .hero__client .maker {
   max-width: 3.75rem;
   height: 1.125rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .site-header {
+    margin: 1.5rem 2rem;
+  }
+  .site-header .nav {
+    width: 100%;
+    margin-left: 3.75rem;
+  }
+  .site-header .nav__hamburger {
+    display: none;
+  }
+  .site-header .nav__menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .site-header .nav__col-1 {
+    margin-bottom: 0;
+  }
+  .site-header .nav__list {
+    flex-direction: row;
+    align-items: center;
+    gap: 2.5rem;
+  }
+  .site-header .nav__link {
+    text-wrap: nowrap;
+  }
+  .site-header .nav__link.dropdown::after {
+    margin-left: 0.4rem;
+    margin-bottom: 1px;
+  }
+  .site-header .nav__item {
+    margin: 0;
+    position: relative;
+  }
+  .site-header .nav__item__content {
+    position: absolute;
+    margin: 0;
+    margin-top: 1rem;
+    background-color: hsl(0, 0%, 98%);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+    padding-right: 2.25rem;
+    gap: 1rem;
+  }
+  .site-header .nav__item__box {
+    display: inline-flex;
+  }
+  .site-header .nav__item__link {
+    text-wrap: nowrap;
+  }
+  .site-header .nav__item__btn.register {
+    padding: 1rem 1.5rem;
+  }
+  .site-content .hero__title {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
