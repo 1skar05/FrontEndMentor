@@ -228,7 +228,7 @@ body {
   height: 1.125rem;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .site-header {
     margin: 1.5rem 2rem;
   }
@@ -254,6 +254,7 @@ body {
   }
   .site-header .nav__link {
     text-wrap: nowrap;
+    font-size: 1rem;
   }
   .site-header .nav__link.dropdown::after {
     margin-left: 0.4rem;
@@ -280,10 +281,40 @@ body {
   .site-header .nav__item__link {
     text-wrap: nowrap;
   }
+  .site-header .nav__item__btn {
+    font-size: 1rem;
+  }
   .site-header .nav__item__btn.register {
     padding: 1rem 1.5rem;
   }
+  .site-content .hero {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 7rem;
+    margin-left: 10.188rem;
+    margin-right: 8rem;
+    margin-bottom: 0;
+  }
+  .site-content .hero__content {
+    text-align: left;
+    margin-top: 5rem;
+  }
   .site-content .hero__title {
-    font-size: 2rem;
+    font-size: calc(3rem + 2vw);
+    width: 97%;
+    margin-bottom: 3.5rem;
+  }
+  .site-content .hero__text {
+    font-size: 18px;
+    width: 85%;
+    margin-bottom: 3.25rem;
+  }
+  .site-content .hero__cta {
+    font-size: 18px;
+    margin-bottom: 7rem;
+  }
+  .site-content .hero__client {
+    justify-content: unset;
+    gap: 2.5rem;
   }
 }/*# sourceMappingURL=main.css.map */

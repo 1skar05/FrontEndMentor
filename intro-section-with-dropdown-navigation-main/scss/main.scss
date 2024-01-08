@@ -224,7 +224,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1200px) {
   .site {
     &-header {
       margin: 1.5rem 2rem;
@@ -249,6 +249,7 @@
         }
         &__link {
           text-wrap: nowrap;
+          font-size: base.$link-font-size;
 
           &.dropdown {
             &::after {
@@ -278,6 +279,7 @@
             text-wrap: nowrap;
           }
           &__btn {
+            font-size: base.$link-font-size;
             &.register {
               padding: 1rem 1.5rem;
             }
@@ -287,8 +289,33 @@
     }
     &-content {
       .hero {
+        flex-direction: row-reverse;
+        align-items: center;
+        gap: 7rem;
+        margin-left: 10.188rem;
+        margin-right: 8rem;
+        margin-bottom: 0;
+        &__content {
+          text-align: left;
+          margin-top: 5rem;
+        }
         &__title {
-          font-size: 2rem;
+          font-size: calc(3rem + 2vw);
+          width: 97%;
+          margin-bottom: 3.5rem;
+        }
+        &__text {
+          font-size: base.$font-size-paragraph;
+          width: 85%;
+          margin-bottom: 3.25rem;
+        }
+        &__cta {
+          font-size: base.$font-size-paragraph;
+          margin-bottom: 7rem;
+        }
+        &__client {
+          justify-content: unset;
+          gap: 2.5rem;
         }
       }
     }
