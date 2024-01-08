@@ -75,6 +75,9 @@
         font-weight: base.$nav-link-font-weight;
         line-height: base.$nav-link-line-height;
         user-select: none;
+        &:hover {
+          color: base.$nav-link-hover;
+        }
         &.dropdown {
           &::after {
             content: "";
@@ -138,6 +141,7 @@
           width: 100%;
           background: none;
           font-family: base.$font-primary;
+          color: base.$nav-link-color;
           &.login {
             border: none;
           }
@@ -145,6 +149,9 @@
             padding: 1rem 0;
             border: 1px solid base.$medium-gray;
             border-radius: base.$register-border-radius;
+          }
+          &:hover {
+            color: base.$nav-link-hover;
           }
         }
       }
@@ -228,6 +235,7 @@
   .site {
     &-header {
       margin: 1.5rem 2rem;
+      align-items: center;
       .nav {
         width: 100%;
         margin-left: 3.75rem;
@@ -237,6 +245,7 @@
         &__menu {
           display: flex;
           justify-content: space-between;
+          align-items: center;
           width: 100%;
         }
         &__col-1 {
