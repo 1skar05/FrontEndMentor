@@ -156,6 +156,7 @@ body {
   background: none;
   font-family: Epilogue, sans-serif;
   color: hsl(0, 0%, 41%);
+  cursor: pointer;
 }
 .site-header .nav__item__btn.login {
   border: none;
